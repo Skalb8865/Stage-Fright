@@ -1,0 +1,383 @@
+/* =========== Member Section Start =========== */
+/* ============================================ */
+
+.our-albums {
+    padding: 100px 0 220px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.albums-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.albums-cards {
+    position: relative;
+    border-radius: 10px;
+    width: 410px;
+    height: 409px;
+    margin: 10px;
+    transition: 1.15s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.albums-cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Increase the size of the cards when you hover over them */
+.albums-cards:hover {
+    transform: scale(1.035);
+    transition: 0.5s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.albums-page {
+    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.albums-page h1 {
+    font-weight: 600;
+    font-size: 50px;
+    color: var(--background-dark);
+    text-align: center;
+    margin: 0 0 3rem 0;
+    border-bottom: solid var(--primary);
+    border-radius: 5px;
+    border-width: 5px;
+    padding-bottom: 18px;
+}
+
+
+/* =========== album page ends =========== */
+/* =========================================== */
+
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 90%;
+    width: 87%;
+    z-index: 1;
+    padding: 100px 40px 144px 40px;
+    text-transform: uppercase;
+    background: var(--background-light);
+}
+
+.main_content {
+    color: aliceblue;
+}
+
+.main_img--container {
+    justify-self: center;
+}
+.main_img--card {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main_img--card img {
+    border-radius: 10px;
+}
+.main_content h1 {
+    background: linear-gradient(to right, #DC0000, #850000);
+    background-clip: text;
+    color: transparent !important;
+    font-size: 4rem;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    align-self: center;
+}
+/* ===========This is for th images that link to another album================================ */
+img{
+    border-radius: 10px;
+}
+.OtherAlbums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+.OtherAlbumsCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:10%;
+    width: 10%;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.H1Container{
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    height:10%;
+    width: 800px;
+    flex-wrap: wrap;
+    cursor: grab;
+
+}
+.main_contentV2 h1 {
+    background: linear-gradient(to right, #DC0000, #850000);
+    background-clip: text;
+    color: transparent !important;
+    font-size: 4rem;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    padding-right: auto;
+    flex-wrap: wrap;
+}
+/* ================================================================================================================================== */
+
+.songs {
+    padding-bottom: 20px;
+}
+
+.Soundtrack {
+    padding-bottom: 10px;
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.active-song {
+    color: blue;
+}
+
+
+.Soundtrack span {
+    border-bottom: solid 2px black;
+    padding: 5px;
+}
+
+.Soundtrack .song-length {
+    padding-left: 75px;
+}
+
+.play-icon {
+    padding: 10px;
+    font-size: 21px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.play-icon .fa-circle-pause {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.play-icon:hover {
+    color: var(--primary);
+    transition: 0.3s ease;
+}
+
+.play-icon .fa-circle-pause:hover {
+    color: var(--primary);
+    transition: 0.3s ease;
+}
+
+/* @media screen and (max-width:1440px) {
+    .songs {
+        padding-left: 25px;
+    }
+} */
+
+/************************************/
+/*Responsive CSS for Mobile Devices**/
+@media screen and (max-width:1142px) {
+
+    /********************************************/
+    /*Responsive styling for main sections*/
+
+    .main_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        height: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .main_img--container {
+        display: flex;
+        justify-content: center;
+        /* padding-left: 0px; */
+        margin-right: auto;
+        margin-left: 180px;
+       
+    }
+
+    .main_img--card {
+        height: 250px;
+        width: 250px;
+        margin-top: 170px;
+        
+    }
+
+    .main_content {
+        text-align: center;
+        margin-bottom: 3rem;
+        padding-top: 20px;
+    }
+
+    .main_content h1 {
+        font-size: 4rem;
+        margin-top: 8rem;
+
+    }
+
+    .main_content h2 {
+        font-size: 2.5rem;
+    }
+
+    .main_content p {
+        margin-bottom: 1.5rem;
+    }
+
+   
+    img{
+        border-radius: 10px;
+        height:450px;
+        width: 450px;
+    }
+    .OtherAlbums {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        cursor: grab;
+        flex-wrap: wrap;
+        
+    }
+    .OtherAlbumsCards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:10%;
+        width: 10%;
+        gap: 15px;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        flex-wrap: wrap;
+    }
+    
+    
+    .H1Container{
+        align-self: center;
+        margin-right: auto;
+        margin-left: auto;
+        height:10%;
+        width: 500px;
+        flex-wrap: wrap;
+    
+    }
+    .main_contentV2 h1 {
+        background: linear-gradient(to right, #DC0000, #850000);
+        background-clip: text;
+        color: transparent !important;
+        font-size: 4rem;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        padding-right: auto;
+        flex-wrap: wrap;
+    }
+}
+
+/********************************************/
+/*Main Section Styling for Mobile Devices*/
+@media screen and (max-width: 600px) {
+    .main_img--container {
+        padding-left: 0;
+        margin-right: 130px;
+        margin-left: 35px;
+        
+    }
+
+    .main_img--card {
+        height: 250px;
+        width: 250px;
+    }
+
+    .main_content {
+        padding-top: 10px;
+    }
+    .main_content h1 {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+
+    .main_content h2 {
+        font-size: 2rem;
+    }
+
+    .main_content p {
+        margin-top: 2rem;
+    }
+
+    .albums-cards {
+        position: relative;
+        border-radius: 10px;
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        transition: 1.15s ease;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+ 
+    img{
+        border-radius: 10px;
+        height:350px;
+        width: 350px;
+    }
+    .OtherAlbumsCards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:10%;
+        width: 10%;
+        gap: 15px;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        flex-wrap: wrap;
+    }
+    .H1Container{
+        align-self: center;
+        margin-right: auto;
+        margin-left: auto;
+        height:10%;
+        width: 300px;
+    
+    }
+    .main_contentV2 h1 {
+        background: linear-gradient(to right, #DC0000, #850000);
+        background-clip: text;
+        color: transparent !important;
+        font-size: 4rem;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        padding-right: auto;
+        flex-wrap: wrap;
+    }
+}

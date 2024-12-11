@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage Fright</title>
+
+    <!-- CSS LINK =============================== -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/tour.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
+    <!-- BOXICONS =================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- AOS =================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome =============================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+        integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="band.html" class="nav-link">Band</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="album.html" class="nav-link">Music</a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img src="../res/StageFright-Logo.png" alt=" Stage Fright Logo"
+                                class="logo"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="merch.html" class="nav-link">Merch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tour.html" class="active-link">Tour</a>
+                    </li>
+
+                    <div class="nav-close" id="nav-close"><i class="bx bx-x"></i></div>
+                </ul>
+            </div>
+
+            <div class="nav-open" id="nav-open"><i class="bx bx-grid-alt"></i></div>
+        </nav>
+    </header>
+    <main class="main">
+        <!-- <section class="tour-home">
+            <h1>Come to our World Tour</h1>
+        </section> -->
+
+        <!-- https://www.youtube.com/watch?v=zsjYYLahFzI -->
+        <div class="tours" id="tours">
+            <h1 id="tours-heading">Our World Tour</h1>
+            <div class="tours-wrapper" data-aos="fade-up">
+
+                <div class="tour-cards">
+                    <img src="../res/columbus-concert.png" alt="Nationwide Arena">
+                    <h1>Nationwide Arena</h1>
+                    <p>200 W Nationwide Blvd, Columbus, OH 43215</p>
+                    <a href="#demo-modal">Open Demo Modal</a>
+                </div>
+
+                <div class="tour-cards">
+                    <img src="../res/Skullys-600x600.jpg" alt="SKULLYS MUSIC DINER" />
+                    <h1>SKULLYS MUSIC DINER</h1>
+                    <p>1151 N. High St. Columbus OH 43201</p>
+                    <p>Jan 29th-30th</p>
+                    <a href="#demo-modal">Buy Tickets</a>
+                </div>
+
+                <div class="tour-cards">
+                    <img src="../res/fraze-pavilion-is-southwestern.jpg" alt="Fraze Pavilion" />
+                    <h1>Fraze Pavilion</h1>
+                    <p>695 Lincoln Park Blvd, Kettering, OH 45429-3411</p>
+                    <p>Feb 1st-2nd</p>
+                    <a href="#demo-modal">Buy Tickets</a>
+                </div>
+
+                <div class="tour-cards">
+                    <img src="../res/crtsy-electric-factory-crowd-900VP.jpg" alt="Franklin Music Hall" />
+                    <h1>Franklin Music Hall</h1>
+                    <p>421 N 7th St, Philadelphia, PA 19123</p>
+                    <a href="#demo-modal">Open Demo Modal</a>
+                </div>
+
+                <div class="tour-cards">
+                    <img src="../res/WorldCafeLive-Downstairs-ctsyWorldCafeLive-2200x1237vp.jpg" alt="World Cafe Live" />
+                    <h1>World Cafe Live</h1>
+                    <p>3025 Walnut St, Philadelphia, PA 19104</p>
+                    <a href="#demo-modal">Open Demo Modal</a>
+                </div>
+
+                <div class="tour-cards">
+                    <img src="../res/Newport-Music-Hall-600x600.jpg" alt="Sean" />
+                    <h1>Newport Music Hallo</h1>
+                    <p>1722 N High St, Columbus, OH 43201</p>
+                    <p>Feb 8th - 9th</p>
+                    <a href="#demo-modal">Buy Tickets</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="demo-modal" class="modal">
+            <div class="modal__content">
+                <!-- Contact Form -->
+                <h1 class="order-from-header">Order Tickets</h1>
+                <div class="order-form">
+                    <form action="#">
+                        <input type="text" placeholder="Number of Tickets" required>
+                        <button type="submit" class="btn" onclick="closeModal()">Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!--FOOTER SECTION-->
+        <div class="footer_container">
+            <div class="footer_links"><!--links section-->
+                <div class="footer_link_wrapper"><!--links wrapper-->
+                    <div class="footer_link_items"><!-- link group 1-->
+                        <h2>Credits</h2>
+                        <hr class="small_hr">
+                        <p style="padding-bottom: 10px;">Made by Sean Kalb</p>
+                        <a href="../html/credits.html" download style="padding-bottom: 3.5px;">Sources</a>
+                        <a href="../html/contact.html">Email Us</a>
+                    </div>
+                    <div class="footer_link_items"><!-- link group 2-->
+                        <h2>Contact Us</h2>
+                        <hr class="small_hr">
+                        <p>90 West Broad Street</p>
+                        <p>Columbus Ohio 43215</p>
+                        <p>Phone:(614) 645-3111</p>
+                    </div>
+                    <div class="footer_link_items"><!-- link group 4-->
+                        <h2>Social Media</h2>
+                        <hr class="small_hr">
+                        <div class="wrapper" style="width: 280px;">
+                            <div class="button">
+                                <div class="icon">
+                                    <a href="#" target="_blank" style="color: black;"><i class="fa fa-facebook"></i></a>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <div class="icon">
+                                    <a href="https://www.instagram.com/stagefrightoffical/profilecard/?igsh=MXJ4MXZsbGtva3JmdQ=="
+                                        target="_blank" style="color: black;"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <div class="icon">
+                                    <a href="https://x.com/StageFrightOff?t=SFSF9X8QORdKH4-i4tQUEQ&s=09" target="_blank"
+                                        style="color: black;">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <div class="icon">
+                                    <a href="#" target="_blank" style="color: black;"><i class="fa fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="website_rights">&copy &nbsp PS Final Project 2024. All rights reserved.</p>
+            <!--copyright info-->
+        </div>
+        <!-- Font Awesome Js =============================== -->
+        <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+        <!-- JS LINKS =============================== -->
+        <script src="../js/index.js"></script>
+        <script src="../js/modal.js"></script>
+        <!-- AOS JS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </footer>
+</body>
+
+</html>
