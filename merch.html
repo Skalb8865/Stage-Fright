@@ -1,212 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Stage Fright</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage Fright</title>
 
-        <!-- CSS LINK =============================== -->
-        <link rel="stylesheet" href="./css/about.css">
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/shopping.css">
+    <!-- CSS LINK =============================== -->
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/shopping.css">
 
-        <!-- BOXICONS =================================== -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <!-- BOXICONS =================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
-        <!-- AOS =================================== -->
-        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- AOS =================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-        <!-- Font Awesome =============================== -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
-            integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+    <!-- Font Awesome =============================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+        integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <body>
-        <nav class="nav container">
-            <!-- <a href="index.html"><img src="../res/Stage Fright Logo No Background 2.png" alt=" Stage Fright Logo"
-                    class="logo"></a> -->
-            <div class="main-nav" id="main-nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="./Band.html" class="nav-link">Band</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./album.html" class="nav-link">Music</a>
-                    </li>
-                    <li>
-                        <a href="./index.html"><img src="./res/StageFright-Logo.png" alt=" Stage Fright Logo"
-                                class="logo"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./merch.html" class="nav-link">Merch</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./tour.html" class="nav-link">Tour</a>
-                    </li> <!-- CART ICON  -->
-                    <i class='bx bx-shopping-bag' id="cart-icon"></i>
+<body>
+    <nav class="nav container">
+        <div class="main-nav" id="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="./Band.html" class="nav-link">Band</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./album.html" class="nav-link">Music</a>
+                </li>
+                <li>
+                    <a href="./index.html"><img src="./res/StageFright-Logo.png" alt=" Stage Fright Logo"
+                            class="logo"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="./merch.html" class="nav-link">Merch</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./tour.html" class="nav-link">Tour</a>
+                </li> <!-- CART ICON  -->
+                <i class='bx bx-shopping-bag' id="cart-icon"></i>
 
-                    <!-- CART  -->
-                    <div class="cart">
-                        <h2 class="cart-title">Your Cart</h2>
+                <!-- CART  -->
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
 
-                        <!-- CONTENT  -->
-                        <div class="cart-content">
+                    <!-- CONTENT  -->
+                    <div class="cart-content">
 
 
-                        </div>
-
-                        <!-- TOTAL   -->
-                        <div class="total">
-                            <div class="total-title">Total</div>
-                            <div class="total-price">$0</div>
-                        </div>
-                        <!-- BUY BUTTON  -->
-                        <button type="button" class="btn-buy">Buy Now</button>
-                        <!-- CART CLOSE  -->
-                        <i class='bx bx-x' id="cart-close"></i>
-                    </div>>
-                    <div class="nav-close" id="nav-close"><i class="bx bx-x"></i></div>
-                </ul>
-            </div>
-
-            <div class="nav-open" id="nav-open"><i class="bx bx-grid-alt"></i></div>
-        </nav>
-        </header>
-        <!-- HEADER  -->
-
-        <!-- SHOP SECTION  -->
-        <section class="shop container">
-            <h2 class="section-title">Shop Products</h2>
-
-            <!-- CONTENT  -->
-            <div class="shop-content">
-                <!-- BOX 1 -->
-                <div class="product-box">
-                    <img src="./res/WhiteShirtMerch.png" alt="" class="product-img">
-                    <h2 class="product-title">Nike Shoes</h2>
-                    <span class="product-price">$79.5</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-                <!-- BOX 2 -->
-                <div class="product-box">
-                    <img src="./res/Acantha.png" alt="" class="product-img">
-                    <h2 class="product-title">BACKPACK</h2>
-                    <span class="product-price">$59.5</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-                <!-- BOX 3 -->
-                <div class="product-box">
-                    <img src="./res/three-panel-fleece-hoodie.jpg" alt="" class="product-img">
-                    <h2 class="product-title">METAL BOTTLE</h2>
-                    <span class="product-price">$29.5</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-                <!-- BOX 4 -->
-                <div class="product-box">
-                    <img src="./res/NYX.png" alt="" class="product-img">
-                    <h2 class="product-title">METAL SUNGLASSES</h2>
-                    <span class="product-price">$105</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-                <!-- BOX 5 -->
-                <div class="product-box">
-                    <img src="./res/hatMerch.png" alt="" class="product-img">
-                    <h2 class="product-title">PS5 Controllegr</h2>
-                    <span class="product-price">$95</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-                <!-- BOX 6 -->
-                <div class="product-box">
-                    <img src="./res/Creatinefacts.png" alt="" class="product-img">
-                    <h2 class="product-title">Galaxy Z Fold</h2>
-                    <span class="product-price">$1400</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-                <!-- BOX 7 -->
-                <div class="product-box">
-                    <img src="./res/boy_Hoodie.png" alt="" class="product-img">
-                    <h2 class="product-title">Nokon Camera</h2>
-                    <span class="product-price">$1700</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-                <!-- BOX 8 -->
-                <div class="product-box">
-                    <img src="./res/Aidien.png" alt="" class="product-img">
-                    <h2 class="product-title">Apple Watch</h2>
-                    <span class="product-price">$110.5</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-            </div>
-        </section>
-
-        <!--FOOTER SECTION-->
-        <div class="footer_container">
-            <div class="footer_links"><!--links section-->
-                <div class="footer_link_wrapper"><!--links wrapper-->
-                    <div class="footer_link_items"><!-- link group 1-->
-                        <h2>Credits</h2>
-                        <hr class="small_hr">
-                        <p style="padding-bottom: 10px;">Made by Sean Kalb</p>
-                        <a href="./credits.html" download style="padding-bottom: 3.5px;">Sources</a>
-                        <a href="./contact.html">Email Us</a>
                     </div>
-                    <div class="footer_link_items"><!-- link group 2-->
-                        <h2>Contact Us</h2>
-                        <hr class="small_hr">
-                        <p>90 West Broad Street</p>
-                        <p>Columbus Ohio 43215</p>
-                        <p>Phone:(614) 645-3111</p>
+
+                    <!-- TOTAL   -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
                     </div>
-                    <div class="footer_link_items"><!-- link group 4-->
-                        <h2>Social Media</h2>
-                        <hr class="small_hr">
-                        <div class="wrapper" style="width: 280px;">
-                            <div class="button">
-                                <div class="icon">
-                                    <a href="#" target="_blank" style="color: black;"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <div class="button">
-                                <div class="icon">
-                                    <a href="https://www.instagram.com/stagefrightoffical/profilecard/?igsh=MXJ4MXZsbGtva3JmdQ=="
-                                        target="_blank" style="color: black;"><i class="fa fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="button">
-                                <div class="icon">
-                                    <a href="https://x.com/StageFrightOff?t=SFSF9X8QORdKH4-i4tQUEQ&s=09" target="_blank"
-                                        style="color: black;">
-                                        <i class="fa-brands fa-x-twitter"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="button">
-                                <div class="icon">
-                                    <a href="#" target="_blank" style="color: black;"><i class="fa fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="website_rights">&copy &nbsp PS Final Project 2024. All rights reserved.</p>
-            <!--copyright info-->
+                    <!-- BUY BUTTON  -->
+                    <button type="button" class="btn-buy">Buy Now</button>
+                    <!-- CART CLOSE  -->
+                    <i class='bx bx-x' id="cart-close"></i>
+                </div>>
+                <div class="nav-close" id="nav-close"><i class="bx bx-x"></i></div>
+            </ul>
         </div>
-        <!-- JS LINKS =============================== -->
-        <script src="./js/main.js"></script>
-        <!-- Font Awesome Js =============================== -->
-        <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
-        <!-- AOS JS -->
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-        </footer>
-    </body>
+
+        <div class="nav-open" id="nav-open"><i class="bx bx-grid-alt"></i></div>
+    </nav>
+    </header>
+    <!-- HEADER  -->
+
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="./res/WhiteShirtMerch.png" alt="" class="product-img">
+                <h2 class="product-title">Nike Shoes</h2>
+                <span class="product-price">$79.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="./res/Acantha.png" alt="" class="product-img">
+                <h2 class="product-title">BACKPACK</h2>
+                <span class="product-price">$59.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="./res/three-panel-fleece-hoodie.jpg" alt="" class="product-img">
+                <h2 class="product-title">METAL BOTTLE</h2>
+                <span class="product-price">$29.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="./res/NYX.png" alt="" class="product-img">
+                <h2 class="product-title">METAL SUNGLASSES</h2>
+                <span class="product-price">$105</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="./res/hatMerch.png" alt="" class="product-img">
+                <h2 class="product-title">PS5 Controllegr</h2>
+                <span class="product-price">$95</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="./res/Creatinefacts.png" alt="" class="product-img">
+                <h2 class="product-title">Galaxy Z Fold</h2>
+                <span class="product-price">$1400</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="./res/boy_Hoodie.png" alt="" class="product-img">
+                <h2 class="product-title">Nokon Camera</h2>
+                <span class="product-price">$1700</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="./res/Aidien.png" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER SECTION-->
+    <div class="footer_container">
+        <div class="footer_links"><!--links section-->
+            <div class="footer_link_wrapper"><!--links wrapper-->
+                <div class="footer_link_items"><!-- link group 1-->
+                    <h2>Credits</h2>
+                    <hr class="small_hr">
+                    <p style="padding-bottom: 10px;">Made by Sean Kalb</p>
+                    <a href="./credits.html" download style="padding-bottom: 3.5px;">Sources</a>
+                    <a href="./contact.html">Email Us</a>
+                </div>
+                <div class="footer_link_items"><!-- link group 2-->
+                    <h2>Contact Us</h2>
+                    <hr class="small_hr">
+                    <p>90 West Broad Street</p>
+                    <p>Columbus Ohio 43215</p>
+                    <p>Phone:(614) 645-3111</p>
+                </div>
+                <div class="footer_link_items"><!-- link group 4-->
+                    <h2>Social Media</h2>
+                    <hr class="small_hr">
+                    <div class="wrapper" style="width: 280px;">
+                        <div class="button">
+                            <div class="icon">
+                                <a href="#" target="_blank" style="color: black;"><i class="fa fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <div class="icon">
+                                <a href="https://www.instagram.com/stagefrightoffical/profilecard/?igsh=MXJ4MXZsbGtva3JmdQ=="
+                                    target="_blank" style="color: black;"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <div class="icon">
+                                <a href="https://x.com/StageFrightOff?t=SFSF9X8QORdKH4-i4tQUEQ&s=09" target="_blank"
+                                    style="color: black;">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <div class="icon">
+                                <a href="#" target="_blank" style="color: black;"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="website_rights">&copy &nbsp PS Final Project 2024. All rights reserved.</p>
+        <!--copyright info-->
+    </div>
+    <!-- JS LINKS =============================== -->
+    <script src="./js/main.js"></script>
+    <!-- Font Awesome Js =============================== -->
+    <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    </footer>
+</body>
+
 </html>
