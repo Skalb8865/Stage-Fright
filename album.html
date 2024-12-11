@@ -8,14 +8,11 @@
     <title>Stage Fright</title>
 
     <!-- CSS LINK =============================== -->
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/albums.css">
-    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/albums.css">
 
     <!-- BOXICONS =================================== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-    <!-- AOS =================================== -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- Font Awesome =============================== -->
@@ -33,20 +30,20 @@
             <div class="main-nav" id="main-nav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="band.html" class="nav-link">Band</a>
+                        <a href="./Band.html" class="nav-link">Band</a>
                     </li>
                     <li class="nav-item">
-                        <a href="album.html" class="active-link">Music</a>
+                        <a href="./album.html" class="active-link">Music</a>
                     </li>
                     <li>
-                        <a href="/index.html"><img src="../res/StageFright-Logo.png" alt=" Stage Fright Logo"
+                        <a href="./index.html"><img src="./res/StageFright-Logo.png" alt=" Stage Fright Logo"
                                 class="logo"></a>
                     </li>
                     <li class="nav-item">
-                        <a href="merch.html" class="nav-link">Merch</a>
+                        <a href="./merch.html" class="nav-link">Merch</a>
                     </li>
                     <li class="nav-item">
-                        <a href="tour.html" class="nav-link">Tour</a>
+                        <a href="./tour.html" class="nav-link">Tour</a>
                     </li>
 
                     <div class="nav-close" id="nav-close"><i class="bx bx-x"></i></div>
@@ -56,72 +53,36 @@
             <div class="nav-open" id="nav-open"><i class="bx bx-grid-alt"></i></div>
         </nav>
     </header>
-    <main>
-        <div class="main_container">
-            <div class="main_img--container">
-                <div class="main_img--card" data-aos="fade-right"><img src="../res/NYX.png" alt=""></div>
-            </div>
-            <div class="main_content">
-                <h1>NYX</h1>
-                <div class="songs">
-                    <p class="Soundtrack" data-aos="fade-left"><i class="fa-regular fa-circle-play play-icon"
-                            onclick="changeButton(this)"></i>1.
-                        <span>Sick Jeffery - 4:31</span>
-                    </p>
-                    <p class="Soundtrack" data-aos="fade-left"><i class="fa-regular fa-circle-play play-icon"
-                            onclick="changeButton(this)"></i>2.
-                        <span>Ferocious Epstien - 2:18</span>
-                    </p>
-                    <p class="Soundtrack" data-aos="fade-left"><i class="fa-regular fa-circle-play play-icon"
-                            onclick="changeButton(this)"></i>3.
-                        <span>Hissed-off-swan - 3:41</span>
-                    </p>
-                    <p class="Soundtrack" data-aos="fade-left"><i class="fa-regular fa-circle-play play-icon"
-                            onclick="changeButton(this)"></i>4.
-                        <span>Unsteady Nutcracker - 1:51</span>
-                    </p>
-                    <p class="Soundtrack" data-aos="fade-left"><i class="fa-regular fa-circle-play play-icon"
-                            onclick="changeButton(this)"></i>5.
-                        <span> 6735- 2:37</span>
-                    </p>
-                    <p class="Soundtrack" data-aos="fade-left"><i class="fa-regular fa-circle-play play-icon"
-                            onclick="changeButton(this)"></i>6.
-                        <span>Divine Eagle - 3:03</span>
-                    </p>
-                    <p class="Soundtrack" data-aos="fade-left"><i class="fa-regular fa-circle-play play-icon"
-                            onclick="changeButton(this)"></i>7.
-                        <span> baby - 5:21</span>
-                    </p>
-                    <p class="Soundtrack" data-aos="fade-left"><i class="fa-regular fa-circle-play play-icon"
-                            onclick="changeButton(this)"></i>8.
-                        <span>Crow Carnage 3 - 4:09</span>
-                    </p>
-                    <p class="Soundtrack" data-aos="fade-left"><i class="fa-regular fa-circle-play play-icon"
-                            onclick="changeButton(this)"></i>9.
-                        <span>Astaroth - 5:45</span>
-                    </p>
-                    <p class="Soundtrack" data-aos="fade-left"><i class="fa-regular fa-circle-play play-icon"
-                            onclick="changeButton(this)"></i>10. <span>Hideous - 3:55</span>
-                    </p>
-                    <p class="Soundtrack" data-aos="fade-left"><i class="fa-regular fa-circle-play play-icon"
-                            onclick="changeButton(this)"></i>11. <span>Fiening Gull - 4:14</span>
-                    </p>
-                    <p class="Soundtrack" data-aos="fade-left"><i class="fa-regular fa-circle-play play-icon"
-                            onclick="changeButton(this)"></i>12. <span>Mallord the Mallard - 5:31</span>
-                    </p>
+
+    <main class="main">
+
+        <div class="albums-page">
+            <h1>Our Albums</h1>
+
+
+            <div class="our-albums" id="our-albums">
+                <div class="albums-wrapper">
+
+                    <div class="albums-cards" data-aos="fade-up">
+                        <a href="./album1.html">
+                            <img src="./res/Prometheus.png" alt="Our Album PROMETHEUS" />
+                        </a>
+                    </div>
+
+                    <div class="albums-cards" data-aos="fade-up">
+                        <a href="./album2.html">
+                            <img src="./res/Acantha.png" alt="Our Album Acntha" />
+                        </a>
+                    </div>
+
+                    <div class="albums-cards" data-aos="fade-up">
+                        <a href="./album3.html">
+                            <img src="./res/NYX.png" alt="Our Album NYX" />
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="H1Container">
-            <div class="main_contentV2">
-                <h1>Check Out Our Other Albums</h1>
-            </div>
-        </div>
-        <div class="OtherAlbums">
-            <div class="OtherAlbumsCards">
-                <a href="album2.html"><img src="../res/Acantha.png" alt=""></a>
-                <a href="album1.html"><img src="../res/Prometheus.png" alt=""></a>
-            </div>
+
         </div>
     </main>
     <footer>
@@ -133,8 +94,8 @@
                         <h2>Credits</h2>
                         <hr class="small_hr">
                         <p style="padding-bottom: 10px;">Made by Sean Kalb</p>
-                        <a href="../html/credits.html" download style="padding-bottom: 3.5px;">Sources</a>
-                        <a href="../html/contact.html">Email Us</a>
+                        <a href="./credits.html" download style="padding-bottom: 3.5px;">Sources</a>
+                        <a href="./contact.html">Email Us</a>
                     </div>
                     <div class="footer_link_items"><!-- link group 2-->
                         <h2>Contact Us</h2>
@@ -178,12 +139,10 @@
             <p class="website_rights">&copy &nbsp PS Final Project 2024. All rights reserved.</p>
             <!--copyright info-->
         </div>
-        <!-- JS LINKS =============================== -->
-        <script src="../js/index.js"></script>
-        <script src="../js/icon.js"></script>
         <!-- Font Awesome Js =============================== -->
         <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
-        <!-- AOS JS -->
+        <!-- JS LINKS =============================== -->
+        <script src="./js/index.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
             AOS.init();
