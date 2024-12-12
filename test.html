@@ -4,60 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <title>Amelia Portfolio</title>
-    <link rel="stylesheet" href="./css/test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/test.css">
+    <title>Shoes Store</title>
 </head>
 
 <body>
     <nav>
         <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                <a href="./index.html"><img src="./res/StageFright-Logo.png" alt=""></a>
+            <div class="logo">
+                <img src="./res/StageFright-Logo.png" alt="Nike Logo">
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a>
-                </div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a>
-                </div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a
-                        href="#">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a
-                        href="#">Services</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a>
-                </div>
-                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a
-                        href="#">Contact Us</a></div>
+                <a href="">MEN</a>
+                <a href="">WOMEN</a>
+                <a href="">KIDS</a>
+                <a href="">CUSTOMIZE</a>
+                <a href="">COLLECTIONS</a>
             </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-        </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skills</a>
-                <a href="">Services</a>
-                <a href="">Blogs</a>
-                <a href="">Contact Us</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            <div class="search">
+                <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
             </div>
         </div>
     </nav>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({ offset: 0 });
+        AOS.init({
+            offset: 1
+        });
     </script>
     <script>
-        function hamburg() {
-            const navbar = document.querySelector(".dropdown")
-            navbar.style.transform = "translateY(0px)"
-        }
-        function cancel() {
-            const navbar = document.querySelector(".dropdown")
-            navbar.style.transform = "translateY(-500px)"
-        }
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.links').classList.toggle('active');
+            document.querySelector('#cart-icon').classList.toggle('active');
+        });
     </script>
 </body>
 
