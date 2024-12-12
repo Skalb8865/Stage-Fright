@@ -8,10 +8,11 @@
     <title>Stage Fright</title>
 
     <!-- CSS LINK =============================== -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/newindex.css" />
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/albums.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <!-- BOXICONS =================================== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
@@ -39,7 +40,7 @@
                         <a href="./album.html" class="nav-link">Music</a>
                     </li>
                     <li>
-                        <a href="./index.html"><img src="./res/StageFright-Logo.png" alt=" Stage Fright Logo"
+                        <a href="./index.html"><img loading="lazy" src="./res/StageFright-Logo.png" alt=" Stage Fright Logo"
                                 class="logo"></a>
                     </li>
                     <li class="nav-item">
@@ -57,117 +58,134 @@
     </header>
 
     <main class="main">
+
+        <!-- -------------- -->
+        <!-- Hero Section -->
+        <!-- -------------- -->
         <section class="hero-section">
-            <img src="./res/Group.png" alt="" id="hero-image">
+            <img src="./res/Group.png" alt="">
         </section>
 
-        <div class="home-data">
-            <!-- <h3>Stage Fright</h3> -->
-            <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="75" data-aos-offset="0">
-                Unleash<br />Your Inner<br />Rock!
-                <hr>
-                <h1>
-        </div>
 
-        <div class="member" id="member">
-            <h1 data-aos="fade-up">Our Members</h1>
-            <div class="member-wrapper">
-
-                <div class="member-cards" data-aos="fade-up">
-                    <img src="./res/Aidien.png" alt="Aidien" />
-                    <div class="overlay">
-                        <h2>Aidien Gooden</h2>
-                        <p>Lead Vocalist</p>
-                        <a href="./Band.html">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="member-cards" data-aos="fade-up">
-                    <img src="./res/Sean.png" alt="Sean" />
-                    <div class="overlay">
-                        <h2>Sean Kalb</h2>
-                        <p>Lead Guitarist</p>
-                        <a href="./Band.html">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="member-cards" data-aos="fade-up">
-                    <img src="./res/Jabari.png" alt="Jabari" />
-                    <div class="overlay">
-                        <h2>Jabari Hill</h2>
-                        <p>Drummer</p>
-                        <a href="./Band.html">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="member-cards" data-aos="fade-up">
-                    <img src="./res/Gabe.png" alt="Gabe" />
-                    <div class="overlay">
-                        <h2>Gabe Zeigler</h2>
-                        <p>Bass Guitarist</p>
-                        <a href="./Band.html">Learn More</a>
-                    </div>
-                </div>
+        <!-- -------------- -->
+        <!-- Home Section -->
+        <!-- -------------- -->
+        <section class="container">
+            <div class="home-data">
+                <!-- <h3>Stage Fright</h3> -->
+                <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="75" data-aos-offset="0">
+                    Unleash<br />Your Inner<br />Rock!
+                    <hr>
+                </h1>
             </div>
-        </div>
+        </section>
 
-        <section class="section albums" id="albums">
-            <h2 class="section-title"></h2>
+        <!-- -------------- -->
+        <!-- Member Section -->
+        <!-- -------------- -->
+        <section class="container">
+            <div class="member" id="member">
+                <h1 data-aos="fade-up">Our Members</h1>
+                <div class="member-wrapper">
 
-                <div class="albums-page">
-                    <h1>OUR ALBUMS</h1>
+                    <div class="member-cards" data-aos="fade-up">
+                        <img loading="lazy" src="./res/Aidien.png" alt="Aidien" />
+                        <div class="overlay">
+                            <h2>Aidien Gooden</h2>
+                            <p>Lead Vocalist</p>
+                            <a href="./Band.html">Learn More</a>
+                        </div>
+                    </div>
 
+                    <div class="member-cards" data-aos="fade-up">
+                        <img loading="lazy" src="./res/Sean.png" alt="Sean" />
+                        <div class="overlay">
+                            <h2>Sean Kalb</h2>
+                            <p>Lead Guitarist</p>
+                            <a href="./Band.html">Learn More</a>
+                        </div>
+                    </div>
 
-                    <div class="our-albums" id="our-albums">
-                        <div class="albums-wrapper">
+                    <div class="member-cards" data-aos="fade-up">
+                        <img loading="lazy" src="./res/Jabari.png" alt="Jabari" />
+                        <div class="overlay">
+                            <h2>Jabari Hill</h2>
+                            <p>Drummer</p>
+                            <a href="./Band.html">Learn More</a>
+                        </div>
+                    </div>
 
-                            <div class="albums-cards" data-aos="fade-up">
-                                <a href="./album1.html">
-                                    <img src="./res/Prometheus.png" alt="Our Album PROMETHEUS" />
-                                </a>
-                            </div>
-
-                            <div class="albums-cards" data-aos="fade-up">
-                                <a href="./album2.html">
-                                    <img src="./res/Acantha.png" alt="Our Album Acntha" />
-                                </a>
-                            </div>
-
-                            <div class="albums-cards" data-aos="fade-up">
-                                <a href="./album3.html">
-                                    <img src="./res/NYX.png" alt="Our Album NYX" />
-                                </a>
-                            </div>
+                    <div class="member-cards" data-aos="fade-up">
+                        <img loading="lazy" src="./res/Gabe.png" alt="Gabe" />
+                        <div class="overlay">
+                            <h2>Gabe Zeigler</h2>
+                            <p>Bass Guitarist</p>
+                            <a href="./Band.html">Learn More</a>
                         </div>
                     </div>
 
                 </div>
+            </div>
         </section>
 
-        <section class="section merch">
+        <!-- -------------- -->
+        <!-- Albums Section -->
+        <!-- -------------- -->
+        <section class="container">
+            <div class="albums-page">
+                <h1>OUR ALBUMS</h1>
+                <div class="our-albums" id="our-albums">
+                    <div class="albums-wrapper">
+
+                        <div class="albums-cards" data-aos="fade-up">
+                            <a href="./album1.html">
+                                <img loading="lazy" src="./res/Prometheus.png" alt="Our Album PROMETHEUS" />
+                            </a>
+                        </div>
+
+                        <div class="albums-cards" data-aos="fade-up">
+                            <a href="./album2.html">
+                                <img loading="lazy" src="./res/Acantha.png" alt="Our Album Acntha" />
+                            </a>
+                        </div>
+
+                        <div class="albums-cards" data-aos="fade-up">
+                            <a href="./album3.html">
+                                <img loading="lazy" src="./res/NYX.png" alt="Our Album NYX" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------- -->
+        <!-- Merch Section -->
+        <!-- -------------- -->
+        <section class="container">
             <h2 class="section-title">Merch</h2>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" data-swiper-autoplay="2000">
-                        <a href="./hoodie.html"><img src="./res/boy_Hoodie.png" alt=""></a>
+                        <a href="./hoodie.html"><img loading="lazy" src="./res/boy_Hoodie.png" alt=""></a>
                     </div>
                     <div class="swiper-slide" data-swiper-autoplay="10000">
-                        <img src="./res/girl_hoodie.png" alt="">
+                        <img loading="lazy" src="./res/girl_hoodie.png" alt="">
                     </div>
                     <div class="swiper-slide" data-swiper-autoplay="10000">
-                        <img src="./res/Phone_Case.png" alt="">
+                        <img loading="lazy" src="./res/Phone_Case.png" alt="">
                     </div>
                     <div class="swiper-slide" data-swiper-autoplay="10000">
-                        <img src="./res/Gabe.png" alt="">
+                        <img loading="lazy" src="./res/Gabe.png" alt="">
                     </div>
                     <div class="swiper-slide" data-swiper-autoplay="10000">
-                        <img src="./res/Gabe.png" alt="">
+                        <img loading="lazy" src="./res/Gabe.png" alt="">
                     </div>
                     <div class="swiper-slide" data-swiper-autoplay="10000">
-                        <img src="./res/Gabe.png" alt="">
+                        <img loading="lazy" src="./res/Gabe.png" alt="">
                     </div>
                     <div class="swiper-slide" data-swiper-autoplay="10000">
-                        <img src="./res/Phone_Case.png" alt="">
+                        <img loading="lazy" src="./res/Phone_Case.png" alt="">
                     </div>
                 </div>
                 <!-- Maybe comment the arrows out-->
@@ -176,13 +194,13 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
-        <section class="section tour" id="tour">
-            <h2 class="section-title">Tours</h2>
-        </section>
     </main>
+
+
+    <!-- -------------- -->
+    <!-- Footer Section -->
+    <!-- -------------- -->
     <footer>
-        <!--FOOTER SECTION-->
         <div class="footer_container">
             <div class="footer_links"><!--links section-->
                 <div class="footer_link_wrapper"><!--links wrapper-->
@@ -236,7 +254,11 @@
             <p class="website_rights">&copy &nbsp PS Final Project 2024. All rights reserved.</p>
             <!--copyright info-->
         </div>
-        <!-- JS LINKS =============================== -->
+
+
+        <!-- --------------- -->
+        <!-- JS Link Section -->
+        <!-- --------------- -->
         <script src="./js/index.js"></script>
         <!-- Font Awesome Js =============================== -->
         <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>

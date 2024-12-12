@@ -105,9 +105,7 @@
     align-self: center;
 }
 /* ===========This is for th images that link to another album================================ */
-img{
-    border-radius: 10px;
-}
+
 .OtherAlbums {
     display: flex;
     justify-content: center;
@@ -125,6 +123,11 @@ img{
     margin-top: 50px;
     margin-bottom: 100px;
 }
+
+.OtherAlbumsCards img{
+    border-radius: 10px;
+}
+
 .H1Container{
     align-self: center;
     margin-right: auto;
@@ -255,9 +258,7 @@ img{
     .main_content p {
         margin-bottom: 1.5rem;
     }
-
-   
-    img{
+    .OtherAlbumsCards img{
         border-radius: 10px;
         height:450px;
         width: 450px;
@@ -346,7 +347,7 @@ img{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     }
  
-    img{
+    .OtherAlbumsCards img{
         border-radius: 10px;
         height:350px;
         width: 350px;

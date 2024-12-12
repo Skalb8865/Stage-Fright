@@ -31,6 +31,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    /* messes with the footer link so I will fix later */
+    line-height: calc(1em + 0.5rem);
     scroll-behavior: smooth;
 }
 
@@ -38,12 +40,61 @@ body {
     /* font-family: "Rubik"; */
     /* font-family: "Source Code Pro"; */
     font-family: "Abel";
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-    /* Hide horizontal scrollbar */
+    height: 100vh;
+    width: 100%;
 }
 
+/* container css */
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 1px solid red;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+/* sm */
+@media (max-width: 650px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
+}
 
 .section-title {
     font-family: "Abel";
@@ -54,12 +105,14 @@ body {
     text-align: center;
 }
 
-.home {
-    min-height: 70dvh ;
-    background-image: url(../res/Group.png);
-    -webkit-background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.hero-section {
+    min-height: 25dvh;
+}
+
+.hero-section #hero-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 main {
@@ -573,10 +626,11 @@ main {
 .show-menu {
     top: 0;
 }
+
 /*MERCH======================================================*/
 
 
-  .containerMerch {
+.containerMerch {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -588,17 +642,17 @@ main {
     -ms-user-select: none;
     user-select: none;
     color: #0a0a0a;
-  }
-  
-  /* Hide the browser's default radio button */
-  .containerMerch input {
+}
+
+/* Hide the browser's default radio button */
+.containerMerch input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-  }
-  
-  /* Create a custom radio button */
-  .checkmark {
+}
+
+/* Create a custom radio button */
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -606,53 +660,58 @@ main {
     width: 25px;
     background-color: #eee;
     border-radius: 50%;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .containerMerch:hover input ~ .checkmark {
+}
+
+/* On mouse-over, add a grey background color */
+.containerMerch:hover input~.checkmark {
     background-color: #ccc;
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .containerMerch input:checked ~ .checkmark {
+}
+
+/* When the radio button is checked, add a blue background */
+.containerMerch input:checked~.checkmark {
     background-color: #2196F3;
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .containerMerch input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the indicator (dot/circle) */
-  .containerMerch .checkmark:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: white;
-  }
+}
 
-  * {box-sizing: border-box}
- 
-  .mySlides {display: none}
-  
-  /* Slideshow container */
-  .slideshow-container {
+/* Show the indicator (dot/circle) when checked */
+.containerMerch input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerMerch .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+/* Slideshow container */
+.slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -665,21 +724,22 @@ main {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -687,19 +747,19 @@ main {
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+
+/* The dots/bullets/indicators */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -708,27 +768,38 @@ main {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
+}
+
+.active,
+.dot:hover {
     background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
+}
+
+/* Fading animation */
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
 
 /*MERCH======================================================*/
 /* Active Link ============================== */
