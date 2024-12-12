@@ -1,69 +1,123 @@
-.modal {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .4s;
-}
-
-.modal:target {
-    visibility: visible;
-    opacity: 1;
-}
-
-.modal__content {
-    min-height: 50dvh;
-    border-radius: 4px;
-    position: relative;
-    min-width: 750px;
-    background: #fff;
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+  }
+  
+  form {
+    min-width: 1000px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    margin: 0 0 30px 0;
     text-align: center;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
-}
-
-.order-form {
-    text-align: center;
-    padding: 15px;
-}
-
-.order-from-header {
-    font-weight: 700;
-    color: white;
-    font-size: 35px;
-    background: black;
-    padding: 50px;
-    margin-bottom: 50px;
-}
-
-.order-form form input,
-.order-form form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background: var(--accent);
-    /* Makes it so you cant resized the textarea by dragging from the bottom right corner of the box */
-    resize: none;
-}
-
-.order-form form button {
-    background-color: var(--primary);
-    color: white;
-    padding: 15px 25px;
+  }
+  dialog{
+    min-height: 700px;
+    min-width: 1000px;
+    
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
     border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #000000;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
     border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s ease;
-}
-
-.order-form form button:hover {
-    background-color: var(--primary-dark);
-    transition: 0.5s ease;
-}
+    width: 100%;
+    border: 1px solid #000000;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+  }
+  
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .number {
+    background-color: #d30e0e;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    form {
+      max-width: 480px;
+    }
+  
+  }
+  

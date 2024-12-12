@@ -69,7 +69,8 @@
                     <img src="./res/columbus-concert.png" alt="Nationwide Arena">
                     <h1>Nationwide Arena</h1>
                     <p>200 W Nationwide Blvd, Columbus, OH 43215</p>
-                    <a href="#demo-modal">Open Demo Modal</a>
+                    <p>Jan 26th - 27th</p>
+                    <a id="open-modal">Buy Tickets</a>
                 </div>
 
                 <div class="tour-cards">
@@ -77,7 +78,7 @@
                     <h1>SKULLYS MUSIC DINER</h1>
                     <p>1151 N. High St. Columbus OH 43201</p>
                     <p>Jan 29th-30th</p>
-                    <a href="#demo-modal">Buy Tickets</a>
+                    <a id="open-modal">Buy Tickets</a>
                 </div>
 
                 <div class="tour-cards">
@@ -85,46 +86,65 @@
                     <h1>Fraze Pavilion</h1>
                     <p>695 Lincoln Park Blvd, Kettering, OH 45429-3411</p>
                     <p>Feb 1st-2nd</p>
-                    <a href="#demo-modal">Buy Tickets</a>
+                    <a id="open-modal">Buy Tickets</a>
                 </div>
 
                 <div class="tour-cards">
                     <img src="./res/crtsy-electric-factory-crowd-900VP.jpg" alt="Franklin Music Hall" />
                     <h1>Franklin Music Hall</h1>
                     <p>421 N 7th St, Philadelphia, PA 19123</p>
-                    <a href="#demo-modal">Open Demo Modal</a>
+                    <p>Feb 4th - 5th</p>
+                    <a id="open-modal">Buy Tickets</a>
                 </div>
 
                 <div class="tour-cards">
                     <img src="./res/WorldCafeLive-Downstairs-ctsyWorldCafeLive-2200x1237vp.jpg" alt="World Cafe Live" />
                     <h1>World Cafe Live</h1>
                     <p>3025 Walnut St, Philadelphia, PA 19104</p>
-                    <a href="#demo-modal">Open Demo Modal</a>
+                    <p>Feb 7th - 8th</p>
+                    <a id="open-modal">Buy Tickets</a>
                 </div>
 
                 <div class="tour-cards">
                     <img src="./res/Newport-Music-Hall-600x600.jpg" alt="Sean" />
                     <h1>Newport Music Hallo</h1>
                     <p>1722 N High St, Columbus, OH 43201</p>
-                    <p>Feb 8th - 9th</p>
-                    <a href="#demo-modal">Buy Tickets</a>
+                    <p>Feb 10th - 11th</p>
+                    <a id="open-modal">Buy Tickets</a>
                 </div>
 
             </div>
         </div>
 
-        <div id="demo-modal" class="modal">
-            <div class="modal__content">
-                <!-- Contact Form -->
-                <h1 class="order-from-header">Order Tickets</h1>
-                <div class="order-form">
-                    <form action="#">
-                        <input type="text" placeholder="Number of Tickets" required>
-                        <button type="submit" class="btn" onclick="closeModal()">Order</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <dialog id="dialog">
+            <p class="description">
+                <title>Sign Up Form</title>
+                <body>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="index.html" method="post">
+                                <fieldset>
+                                    <legend><span class="number">1</span> Your Basic Info</legend>
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="user_name">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="mail" name="user_email">
+                                    <label for="password">Password:</label>
+                                    <input type="password" id="password" name="user_password">
+                                </fieldset>
+                                <fieldset>
+                                    <legend><span class="number">2</span> Ticket Price: $18</legend>
+                                    <label for="bio">How Many Tickets</label>
+                                    <textarea id="bio" name="user_bio"></textarea>
+                                </fieldset>
+                                <button type="submit">Buy Tickets</button>
+                            </form>
+                        </div>
+                    </div>
+                </body>
+            </p>
+            <button id="close-modal" class="btn" autofocus>Close</button>
+        </dialog>
     </main>
     <footer>
         <!--FOOTER SECTION-->
@@ -184,7 +204,7 @@
         <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
         <!-- JS LINKS =============================== -->
         <script src="./js/index.js"></script>
-        <script src="./js/modal.js"></script>
+        <script src="./js/tour.js"></script>
         <!-- AOS JS -->
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
