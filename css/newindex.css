@@ -53,11 +53,11 @@ body {
 }
 
 
-.hero-section {
+.hero {
     min-height: 25dvh;
 }
 
-.hero-section img {
+.hero img {
     height: 100%;
     width: 100%;
     object-fit: cover;
