@@ -21,6 +21,7 @@ time,
 input,
 button,
 ion-icon {
+    text-decoration: none;
     display: block;
 }
 
