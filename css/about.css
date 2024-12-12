@@ -91,6 +91,7 @@ button:hover {
     padding-bottom: 18px;
 }
 
+
 .band-history h1 {
     margin-top: 2rem;
     color: var(--font-darkest);
@@ -111,20 +112,21 @@ button:hover {
     text-align: center;
     font-size: 52px;
     padding-top: 50px;
+    color: var(--primary-dark);
 }
 
 
 .year h2{
    text-align: center;
     padding-top: 1rem;
-    color: var(--primary-dark);
+    color: var(--font-darkest);
 }
 .year h3 {
     padding-top: 1rem;
     padding-left: 1rem;
     padding-bottom: 10px;
     text-align: center;
-    
+    color: var(--primary-dark);
 }
 
 
