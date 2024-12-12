@@ -108,16 +108,13 @@ button:hover {
 
 
 .timeline h1    {
-    margin-left: 47rem;
+    text-align: center;
     font-size: 52px;
 }
 
-.timeline h3{
-    padding-bottom: 10px;
-}
 
 .year h2{
-   
+   text-align: center;
     padding-top: 1rem;
 }
 .year h3 {
