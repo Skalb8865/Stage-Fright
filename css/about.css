@@ -112,21 +112,21 @@ button:hover {
     text-align: center;
     font-size: 52px;
     padding-top: 50px;
-    color: var(--primary-dark);
+    
 }
 
 
 .year h2{
    text-align: center;
     padding-top: 1rem;
-    color: var(--font-darkest);
+    color: var(--primary-dark);
 }
 .year h3 {
     padding-top: 1rem;
     padding-left: 1rem;
     padding-bottom: 10px;
     text-align: center;
-    color: var(--primary-dark);
+    
 }
 
 
