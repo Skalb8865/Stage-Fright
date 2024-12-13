@@ -79,7 +79,7 @@ body {
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: var(--background-clr-dark);
+    z-index: 9999;
 }
 
 .header-menu{
@@ -156,6 +156,10 @@ body {
 /* ************ */
 /* Hero Section */
 /* ************ */
+.hero{
+    z-index: 1000;
+}
+
 .hero img {
     height: 100%;
     width: 100%;
