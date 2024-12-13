@@ -6,7 +6,7 @@
     --clr-slate600: #475569;
     --clr-slate800: #1e293b;
     --clr-rose: #e11d48;
-    --clir-dark-rose: #881337;
+    --clr-dark-rose: #881337;
     --clr-indigo: #4f46e5;
 
     /* Sizes */
@@ -173,7 +173,7 @@ body {
 }
 
 #logo:hover {
-    color: var(--clir-dark-rose);
+    color: var(--clr-dark-rose);
 }
 
 
