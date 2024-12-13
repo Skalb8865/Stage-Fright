@@ -6,6 +6,7 @@
     --clr-slate600: #475569;
     --clr-slate800: #1e293b;
     --clr-rose: #e11d48;
+    --clir-dark-rose: #881337;
     --clr-indigo: #4f46e5;
 
     /* Sizes */
@@ -39,9 +40,6 @@ body {
     background-color: var(--background-clr-dark);
 }
 
-.main {
-    background-color: var(--background-clr-dark);
-}
 
 
 /* ***************** */
@@ -73,7 +71,7 @@ body {
 /* ************** */
 /* Navbar Section */
 /* ************** */
-.header{
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,54 +80,73 @@ body {
     z-index: 9999;
 }
 
-.header-menu{
+.header-menu {
     display: flex;
     align-items: center;
     list-style: none;
     padding: 0;
     gap: 2em;
 }
-.header-link{
-    font-size: var(--size-base);
+
+.header-link {
+    font-size: var(--size-xl);
     text-decoration: none;
     font-weight: 600;
     color: var(--clr-slate600);
     letter-spacing: -0.05em;
     transition: color .3s;
 }
-.header-link:hover{
+
+.header-link:hover {
     color: var(--clr-rose);
 }
 
-.header-line{
+.header-line {
     border: 1px solid var(--clr-slate600);
     padding-top: 1.5em;
 }
 
-.header-cart{
+.header-cart {
     display: block;
     text-decoration: none;
     border: none;
+    cursor: pointer;
     color: var(--clr-slate600);
-    background-color: var(--background-clr-dark);
+    background-color: transparent;
     width: var(--size-2xl);
     height: var(--size-2xl);
+    transition: color .3s;
 }
 
-.header-resume{
+.header-cart:hover {
+    color: var(--clr-rose);
+}
+
+.header-resume {
     font-size: var(--size-base);
 }
 
-.header-bars{
+.header-bars {
     display: none;
     text-decoration: none;
     border: none;
+    cursor: pointer;
     color: var(--background-clr-light);
-    background-color: var(--background-clr-dark);
-    width: var(--size-base);
-    height: var(--size-base);
+    background-color: transparent;
+    width: var(--size-3xl);
+    height: var(--size-3xl);
 }
 
+#logo {
+    color: var(--clr-rose);
+    font-family: 'Sentient', serif;
+    text-transform: uppercase;
+    font-size: var(--size-3xl);
+}
+
+#logo:hover {
+    color: var(--clir-dark-rose);
+}
 
 /* *********** */
 /* Btn Section */
@@ -156,7 +173,7 @@ body {
 /* ************ */
 /* Hero Section */
 /* ************ */
-.hero{
+.hero {
     z-index: 1000;
 }
 
@@ -200,6 +217,19 @@ body {
     .container {
         max-width: 1024px;
     }
+
+    .header-link {
+        font-size: var(--size-base);
+    }
+
+    .header-cart {
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
+
+    .header-resume {
+        font-size: var(--size-base);
+    }
 }
 
 /* lg */
@@ -212,16 +242,16 @@ body {
         margin-top: 10rem;
     }
 
-    .header-link{
+    .header-link {
         font-size: var(--size-sm);
     }
 
-    .header-cart{
+    .header-cart {
         width: var(--size-xl);
         height: var(--size-xl);
     }
-    
-    .header-resume{
+
+    .header-resume {
         font-size: var(--size-sm);
     }
 }
@@ -232,17 +262,18 @@ body {
         max-width: 640px;
     }
 
-    .header{
+    .header {
         justify-content: flex-end;
     }
 
-    .header-menu{
+    .header-menu {
         display: none;
     }
-    
-    .header-bars{
-        display: block;  
+
+    .header-bars {
+        display: block;
     }
+
 }
 
 /* sm */
