@@ -48,22 +48,11 @@
 }
 
 button {
-    border: none;
-    outline: 0;
-    padding: 10px;
-    margin: 2rem;
-    font-size: 1rem;
-    color: white;
-    background: var(--primary);
-    text-align: center;
-    cursor: pointer;
-    width: 15rem;
-    border-radius: 4px;
-    transition: 0.4s ease;
+    font-size: 1.5rem;
+    cursor:pointer
 }
 
 button:hover {
-    background: var(--primary-dark);
     transition: 0.4s ease;
 }
 

@@ -106,6 +106,11 @@ function handle_changeItemQuantity() {
   if (isNaN(this.value) || this.value < 1) {
     this.value = 1;
   }
+  
+  // detects if the number of an item in a cart is equal to 10 
+  else if (this.value > 10){
+    this.value = 10;
+  }
   this.value = Math.floor(this.value); // to keep it integer
 
   update();
