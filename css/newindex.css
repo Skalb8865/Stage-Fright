@@ -118,9 +118,9 @@ body {
     transition: color .3s;
 }
 
-.header-menu:first-child {
-    padding-left: 200px;
-}
+/* .header-menu:first-child {
+    padding-left: 250px;
+} */
 
 .header-link:hover {
     color: var(--clr-rose);
