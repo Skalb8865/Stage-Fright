@@ -118,6 +118,10 @@ body {
     transition: color .3s;
 }
 
+.header-menu:first-child {
+    padding-left: 50px;
+}
+
 .header-link:hover {
     color: var(--clr-rose);
 }
@@ -173,6 +177,19 @@ body {
 }
 
 #logo:hover {
+    color: var(--clr-dark-rose);
+}
+
+.mobile-logo {
+    display: none;
+    color: var(--clr-rose);
+    font-family: 'Sentient', serif;
+    text-transform: uppercase;
+    font-size: var(--size-3xl);
+    align-self: left;
+}
+
+.mobile-logo:hover {
     color: var(--clr-dark-rose);
 }
 
@@ -337,6 +354,10 @@ body {
     }
 
     .header-bars {
+        display: block;
+    }
+
+    .mobile-logo {
         display: block;
     }
 
