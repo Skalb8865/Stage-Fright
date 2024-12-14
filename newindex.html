@@ -8,13 +8,14 @@
     <title>Stage Fright</title>
 
     <!-- CSS LINK =============================== -->
-    <link rel="stylesheet" href="./css/newindex.css" />
-    <link rel="stylesheet" href="./css/albums.css" defer/>
-    <link rel="stylesheet" href="./css/swiper.css" defer/>
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" defer/>
+    <link rel="preload" href="./css/newindex.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./css/newindex.css"></noscript>
+    <link rel="stylesheet" href="./css/swiper.css"/>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+
 
     <!-- AOS =================================== -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" defer>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- FontShare =============================== -->
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
@@ -111,38 +112,7 @@
         <!-- -------------- -->
         <!-- Merch Section -->
         <!-- -------------- -->
-        <section class="container section">
-            <h2 class="section-title">Merch</h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" data-swiper-autoplay="2000">
-                        <a href="./hoodie.html" aria-label="Stage Hoodie Page"><img loading="lazy" src="./res/boy_Hoodie.png" alt="Stage Fright Hopdie"></a>
-                    </div>
-                    <div class="swiper-slide" data-swiper-autoplay="10000">
-                        <img loading="lazy" src="./res/girl_hoodie.png" alt="Stage Fright Hoodie">
-                    </div>
-                    <div class="swiper-slide" data-swiper-autoplay="10000">
-                        <img loading="lazy" src="./res/Phone_Case.png" alt="Stage Fright Phone Case">
-                    </div>
-                    <div class="swiper-slide" data-swiper-autoplay="10000">
-                        <img loading="lazy" src="./res/Gabe.png" alt="Band Member Gabe">
-                    </div>
-                    <div class="swiper-slide" data-swiper-autoplay="10000">
-                        <img loading="lazy" src="./res/Gabe.png" alt="Band Member Gabe">
-                    </div>
-                    <div class="swiper-slide" data-swiper-autoplay="10000">
-                        <img loading="lazy" src="./res/Gabe.png" alt="Band Member Gabe">
-                    </div>
-                    <div class="swiper-slide" data-swiper-autoplay="10000">
-                        <img loading="lazy" src="./res/Phone_Case.png" alt="Stage Fright Phone Case">
-                    </div>
-                </div>
-                <!-- Maybe comment the arrows out-->
-                <div class="swiper-button-next"><i class="fa-solid fa-circle-chevron-right"></i></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
+
     </main>
 
 
@@ -156,14 +126,14 @@
         <!-- --------------- -->
         <script src="./js/newindex.js"></script>
         <!-- AOS JS -->
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
-        <script defer>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
             AOS.init();
         </script>
         <!-- Swiper JS -->
-        <script src="./js/swiper-bundle.min.js" defer></script>
+        <script src="./js/swiper-bundle.min.js"></script>
         <!-- JS =============================== -->
-        <script defer>
+        <script>
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 1,
                 spaceBetween: 20,
