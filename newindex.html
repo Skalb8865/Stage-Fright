@@ -10,8 +10,6 @@
     <!-- CSS LINK =============================== -->
     <link rel="preload" href="./css/newindex.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="./css/newindex.css"></noscript>
-    <link rel="stylesheet" href="./css/swiper.css"/>
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
 
 
     <!-- AOS =================================== -->
@@ -129,45 +127,6 @@
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
             AOS.init();
-        </script>
-        <!-- Swiper JS -->
-        <script src="./js/swiper-bundle.min.js"></script>
-        <!-- JS =============================== -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 1,
-                spaceBetween: 20,
-                loop: false,
-                speed: 700,
-                // autoplay: {
-                //     delay: 2000,
-                //     disableOnInteraction: false,
-                // },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    dynamicBullets: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-
-                breakpoints: {
-                    877: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    1307: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                    },
-                    1737: {
-                        slidesPerView: 4,
-                        spaceBetween: 40,
-                    },
-                },
-            });
         </script>
     </footer>
 </body>
