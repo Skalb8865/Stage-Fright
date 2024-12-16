@@ -60,7 +60,7 @@ button:hover {
 .band-history {
     flex-basis: auto;
     padding: 7px;
-    border-style: double;
+    border-style:  solid double;
     border-width: 5px;
     border-color:var(--primary-dark) ;
 }
