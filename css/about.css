@@ -54,17 +54,16 @@ button {
 
 button:hover {
     transition: 0.4s ease;
-    
 }
 
 .band-history {
     flex-basis: auto;
     padding: 7px;
+    border-style:  solid double;
+    border-width: 5px;
+    border-color:var(--primary-dark) ;
 }
 
-.band-history p {
-    color: black;
-}
 .band-history h3{
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
@@ -95,6 +94,7 @@ button:hover {
 
 .band-wrapper{
     padding-bottom: 10px;
+
 }
 
 
