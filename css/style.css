@@ -584,18 +584,18 @@ main {
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
+    background-color: #c7c7c7;
     border-radius: 50%;
 }
 
 /* On mouse-over, add a grey background color */
 .containerMerch:hover input~.checkmark {
-    background-color: #ccc;
+    background-color: #000000;
 }
 
 /* When the radio button is checked, add a blue background */
 .containerMerch input:checked~.checkmark {
-    background-color: #2196F3;
+    background-color: #f32121;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */

@@ -127,6 +127,9 @@ h6 {
     text-decoration: underline;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 0;
 }
 
 .main_content p {
