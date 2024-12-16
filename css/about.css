@@ -60,11 +60,9 @@ button:hover {
 .band-history {
     flex-basis: auto;
     padding: 7px;
+    
 }
 
-.band-history p {
-    color: black;
-}
 .band-history h3{
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
@@ -95,6 +93,7 @@ button:hover {
 
 .band-wrapper{
     padding-bottom: 10px;
+
 }
 
 
