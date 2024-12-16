@@ -30,20 +30,20 @@
             <div class="main-nav" id="main-nav">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="./Band.html"   aria-label="About Band Page"  class="nav-link">Band</a>
+                        <a href="./Band.html" aria-label="About Band Page" class="nav-link">Band</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./album.html"   aria-label="Album Page"  class="nav-link">Music</a>
+                        <a href="./album.html" aria-label="Album Page" class="nav-link">Music</a>
                     </li>
-                    <li>
-                        <a href="./index.html" aria-label="Home Page"><img src="./res/StageFright-Logo.png" alt="Stage Fright Logo"
-                                class="logo"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./merch.html"  aria-label="Merch Page" class="active-link">Merch</a>
+                    <li class="nav-logo">
+                        <a href="./index.html" aria-label="Home Page"><img src="./res/StageFright-Logo.png"
+                                alt="Stage Fright Logo" class="logo"></a>
                     </li>
                     <li class="nav-item">
-                        <a href="./tour.html"  aria-label="Tour Page" class="nav-link">Tour</a>
+                        <a href="./merch.html" aria-label="Merch Page" class="active-link">Merch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./tour.html" aria-label="Tour Page" class="nav-link">Tour</a>
                     </li>
 
                     <div class="nav-close" id="nav-close"><i class="bx bx-x"></i></div>
@@ -60,39 +60,93 @@
         <div class="main" id="about">
             <div class="main_container">
                 <div class="main_img--container">
-                    <div class="main_img--card"><img src="./res/boy_Hoodie.png" alt=""></div>
+                    <div class="main_img--card"><img src="./res/WhiteShirtMerch.png" alt=""></div>
                 </div>
                 <div class="main_content">
-                    <h1>Stage Fright hoodie</h1>
+                    <h1>Stage fright long sleeve</h1>
                     <h2>Size</h2>
-                    <label class="containerMerch">Small - $27.56
+                    <label class="containerMerch">Small - $21.99
                         <input type="radio" checked="checked" name="radio">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="containerMerch">Medium - $27.56
+                    <label class="containerMerch">Medium - $21.99
                         <input type="radio" name="radio">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="containerMerch">Large - $27.56
+                    <label class="containerMerch">Large - $21.99
                         <input type="radio" name="radio">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="containerMerch"> XL Large - $27.56
+                    <label class="containerMerch"> XL Large - $21.99
                         <input type="radio" name="radio">
                         <span class="checkmark"></span>
                     </label></button>
-                    <label class="containerMerch"> XXL Large - $30.78
+                    <label class="containerMerch"> XXL Large - $21.99
                         <input type="radio" name="radio">
                         <span class="checkmark"></span>
                     </label></button>
-                    <label class="containerMerch"> XXXL Large - $35.56
+                    <label class="containerMerch"> XXXL Large - $21.99
                         <input type="radio" name="radio">
                         <span class="checkmark"></span>
                     </label></button>
+                    <p>A Collapsible:</p>
+                    <button type="button" class="collapsible">Open Collapsible</button>
+                    <div class="content">
+                        <ul>
+                            <li>Taped neck and shoulders to provide durability</li>
+                            <li>Reactive-dyed for longer lasting color</li>
+                            <li>Contrasting color raglan sleeves</li>
+                            <li>Pre-washed to minimize shrinkage</li>
+                            <li>Overlock stitching on bottom hem</li>
+                            <li>100% ring-spun cotton</li>
+                            <li>Tubular construction</li>
+                            <li>Ribbed crew neck</li>
+                            <li>Double needle stitching on sleeves and bottom hem</li>
+                        </ul>
+                        <p>NOTE: Size charts are for general reference. The fit may vary depending on construction,
+                            materials and manufacturer. Sizing may also vary between and within brands.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
     </main>
+    <section class="section merch">
+        <h2 class="section-title">Merch</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-swiper-autoplay="2000">
+                    <a href="./hoodie.html"><img src="./res/boy_Hoodie.png" alt=""></a>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="10000">
+                    <img src="./res/girl_hoodie.png" alt="">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="10000">
+                    <img src="./res/Phone_Case.png" alt="">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="10000">
+                    <img src="./res/Gabe.png" alt="">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="10000">
+                    <img src="./res/Gabe.png" alt="">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="10000">
+                    <img src="./res/Gabe.png" alt="">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="10000">
+                    <img src="./res/Phone_Case.png" alt="">
+                </div>
+            </div>
+            <!-- Maybe comment the arrows out-->
+            <div class="swiper-button-next"><i class="fa-solid fa-circle-chevron-right"></i></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="section tour" id="tour">
+        <h2 class="section-title">Tours</h2>
+    </section>
     <footer>
         <!--FOOTER SECTION-->
         <div class="footer_container">
@@ -150,6 +204,7 @@
         <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
         <!-- JS LINKS =============================== -->
         <script src="./js/index.js"></script>
+        <script src="./js/collapsibles.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
             AOS.init();

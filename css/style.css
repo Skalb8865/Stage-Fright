@@ -30,7 +30,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
     /* messes with the footer link so I will fix later */
 
     scroll-behavior: smooth;
@@ -121,9 +120,14 @@ main {
     user-select: none;
 }
 
+.nav-logo{
+    list-style: none;
+}
+
 .nav-item {
     margin: 0 0 1.5rem 0;
     user-select: none;
+    list-style: none;
 }
 
 .nav-open {

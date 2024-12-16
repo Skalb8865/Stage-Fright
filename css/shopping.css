@@ -229,8 +229,6 @@ img {
 .add-cart:hover {
     background-color: hsl(249, 32%, 17%);
 }
-
-
 /* ================ RESPONSIVE & BREAKPOINTS ============= */
 @media (max-width: 1080px) {
     .nav {

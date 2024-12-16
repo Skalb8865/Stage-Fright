@@ -9,10 +9,11 @@
 
     <!-- CSS LINK =============================== -->
     <link rel="stylesheet" href="./css/shopping.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/merchmodal.css">
-
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/albums.css">
     <!-- BOXICONS =================================== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
@@ -33,20 +34,20 @@
         <div class="main-nav" id="main-nav">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="./Band.html"  aria-label="About Band Page"  class="nav-link">Band</a>
+                    <a href="./Band.html" aria-label="About Band Page" class="nav-link">Band</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./album.html"  aria-label="Album Page"  class="nav-link">Music</a>
+                    <a href="./album.html" aria-label="Album Page" class="nav-link">Music</a>
                 </li>
                 <li>
-                    <a href="./index.html"  aria-label="Home Page" ><img src="./res/StageFright-Logo.png" alt=" Stage Fright Logo"
-                            class="logo"></a>
+                    <a href="./index.html" aria-label="Home Page"><img src="./res/StageFright-Logo.png"
+                            alt=" Stage Fright Logo" class="logo"></a>
                 </li>
                 <li class="nav-item">
-                    <a href="./merch.html"  aria-label="Merch Page" class="nav-link">Merch</a>
+                    <a href="./merch.html" aria-label="Merch Page" class="nav-link">Merch</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./tour.html"  aria-label="Tour Page" class="nav-link">Tour</a>
+                    <a href="./tour.html" aria-label="Tour Page" class="nav-link">Tour</a>
                 </li> <!-- CART ICON  -->
                 <i class='bx bx-shopping-bag' id="cart-icon"></i>
 
@@ -245,14 +246,59 @@
         <!--copyright info-->
     </div>
     <!-- JS LINKS =============================== -->
+    <script src="./js/index.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/tour.js"></script>
     <!-- Font Awesome Js =============================== -->
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+        integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- JS =============================== -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: false,
+            speed: 700,
+            // autoplay: {
+            //     delay: 2000,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                877: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1307: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1737: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            },
+        });
     </script>
     </footer>
 </body>
