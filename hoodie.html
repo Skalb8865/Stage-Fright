@@ -10,6 +10,8 @@
     <!-- CSS LINK =============================== -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/hoodie.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper.css">
 
     <!-- BOXICONS =================================== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
@@ -119,16 +121,16 @@
                     <a href="./hoodie.html"><img src="./res/boy_Hoodie.png" alt=""></a>
                 </div>
                 <div class="swiper-slide" data-swiper-autoplay="10000">
-                    <img src="./res/girl_hoodie.png" alt="">
+                    <img src="./res/Creatine.png" alt="">
                 </div>
                 <div class="swiper-slide" data-swiper-autoplay="10000">
                     <img src="./res/Phone_Case.png" alt="">
                 </div>
                 <div class="swiper-slide" data-swiper-autoplay="10000">
-                    <img src="./res/Gabe.png" alt="">
+                    <img src="./res/hatMerch.png" alt="">
                 </div>
                 <div class="swiper-slide" data-swiper-autoplay="10000">
-                    <img src="./res/Gabe.png" alt="">
+                    <img src="./res/" alt="">
                 </div>
                 <div class="swiper-slide" data-swiper-autoplay="10000">
                     <img src="./res/Gabe.png" alt="">
@@ -142,10 +144,6 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
-    </section>
-
-    <section class="section tour" id="tour">
-        <h2 class="section-title">Tours</h2>
     </section>
     <footer>
         <!--FOOTER SECTION-->
@@ -203,11 +201,53 @@
         <!-- Font Awesome Js =============================== -->
         <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
         <!-- JS LINKS =============================== -->
-        <script src="./js/index.js"></script>
         <script src="./js/collapsibles.js"></script>
+        <script src="./js/index.js"></script>
+        <!-- Font Awesome Js =============================== -->
+        <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+        <!-- AOS JS -->
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
             AOS.init();
+        </script>
+        <!-- Swiper JS -->
+        <script src="./js/swiper-bundle.min.js"></script>
+        <!-- JS =============================== -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: false,
+                speed: 700,
+                // autoplay: {
+                //     delay: 2000,
+                //     disableOnInteraction: false,
+                // },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+                breakpoints: {
+                    877: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    1307: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1737: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                },
+            });
         </script>
     </footer>
 </body>
