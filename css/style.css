@@ -111,6 +111,7 @@ main {
     color: #000;
     font-weight: 500;
     transition: 0.3s;
+    
 }
 
 .logo {
@@ -118,10 +119,12 @@ main {
     height: 150px;
     margin-top: 30px;
     user-select: none;
+    
 }
 
 .nav-logo{
     list-style: none;
+    text-decoration: none;
 }
 
 .nav-item {
