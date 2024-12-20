@@ -93,6 +93,10 @@
     transition: 0.4s;
 }
 
+.tour-cards a:hover {
+    cursor:pointer;
+}
+
 /* Increase the size of the cards when you hover over them */
 
 
