@@ -138,7 +138,7 @@ button:hover {
     }
 
     .band-wrapper{
-        
+        padding-left: none;
     }
 
 }
