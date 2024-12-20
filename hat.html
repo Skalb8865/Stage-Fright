@@ -10,6 +10,8 @@
     <!-- CSS LINK =============================== -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/hoodie.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper.css">
 
     <!-- BOXICONS =================================== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
@@ -33,17 +35,17 @@
                         <a href="./Band.html" aria-label="About Band Page" class="nav-link">Band</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./album.html"   aria-label="Album Page"  class="nav-link">Music</a>
+                        <a href="./album.html" aria-label="Album Page" class="nav-link">Music</a>
                     </li>
-                    <li>
-                        <a href="./index.html" aria-label="Home Page"><img src="./res/StageFright-Logo.png" alt="Stage Fright Logo"
-                                class="logo"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./merch.html"   aria-label="Merch Page" class="active-link">Merch</a>
+                    <li class="nav-logo">
+                        <a href="./index.html" aria-label="Home Page"><img src="./res/StageFright-Logo.png"
+                                alt="Stage Fright Logo" class="logo"></a>
                     </li>
                     <li class="nav-item">
-                        <a href="./tour.html"  aria-label="Tour Page" class="nav-link">Tour</a>
+                        <a href="./merch.html" aria-label="Merch Page" class="active-link">Merch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./tour.html" aria-label="Tour Page" class="nav-link">Tour</a>
                     </li>
 
                     <div class="nav-close" id="nav-close"><i class="bx bx-x"></i></div>
@@ -63,13 +65,62 @@
                     <div class="main_img--card"><img src="./res/hatMerch.png" alt=""></div>
                 </div>
                 <div class="main_content">
-                    <h1>Apple Iphone 15 Phone Case</h1>
-                    <h2>We help businesses scale</h2>
-                    <button class="main_btn"><a href="#">Add to Cart</a></button>
+                    <h1>Stage fright long sleeve</h1>
+                    <h2>Size</h2>
+                    <label class="containerMerch">One size - $4.99
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>A Collapsible:</p>
+                    <button type="button" class="collapsible">Open Collapsible</button>
+                    <div class="content">
+                        <ul>
+                            <li>100% Polyester</li>
+                            <li>One size</li>
+                            <li>Medium fabric (6.0 oz/yd² (170 g/m²))</li>
+                            <li>The same design is printed on both sides</li>
+                            <li>Overlock stitching on bottom hem</li>
+                        </ul>
+                        <p>NB! Please note these beanies are pre-constructed. A solid background and full-bleed pattern
+                            may not cover 100% of the creasing area along the seams of the beanie.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
     </main>
+    <section class="section merch">
+        <h2 class="section-title">Merch</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-swiper-autoplay="2000">
+                    <a href="./hoodie.html"><img src="./res/boy_Hoodie.png" alt=""></a>
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="10000">
+                    <img src="./res/Creatine.png" alt="">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="10000">
+                    <img src="./res/Phone_Case.png" alt="">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="10000">
+                    <img src="./res/hatMerch.png" alt="">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="10000">
+                    <img src="./res/Beanie.png" alt="">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="10000">
+                    <img src="./res/" alt="">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="10000">
+                    <img src="./res/Phone_Case.png" alt="">
+                </div>
+            </div>
+            <!-- Maybe comment the arrows out-->
+            <div class="swiper-button-next"><i class="fa-solid fa-circle-chevron-right"></i></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
     <footer>
         <!--FOOTER SECTION-->
         <div class="footer_container">
@@ -126,10 +177,53 @@
         <!-- Font Awesome Js =============================== -->
         <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
         <!-- JS LINKS =============================== -->
+        <script src="./js/collapsibles.js"></script>
         <script src="./js/index.js"></script>
+        <!-- Font Awesome Js =============================== -->
+        <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+        <!-- AOS JS -->
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
             AOS.init();
+        </script>
+        <!-- Swiper JS -->
+        <script src="./js/swiper-bundle.min.js"></script>
+        <!-- JS =============================== -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: false,
+                speed: 700,
+                // autoplay: {
+                //     delay: 2000,
+                //     disableOnInteraction: false,
+                // },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+                breakpoints: {
+                    877: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    1307: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1737: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                },
+            });
         </script>
     </footer>
 </body>
