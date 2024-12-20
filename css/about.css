@@ -106,7 +106,7 @@ button:hover {
 /* =========== Member Section Start =========== */
 /* ============================================ */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .about h1 {
         font-size: 2rem;
@@ -138,7 +138,9 @@ button:hover {
     }
 
     .band-wrapper{
-        padding-right: 599;
+        
     }
 
 }
+
+
