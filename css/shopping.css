@@ -58,8 +58,8 @@ img {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 360px;
-    height: 100vh;
+    width: 450px;
+    height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 20px;
@@ -67,6 +67,7 @@ img {
     box-shadow: -2px solid 4px hsl(0 4% 15% / 10%);
     border: 1px solid var(--main-color);
     transition: 1.5s;
+    z-index: 9999;
 }
 
 .cart.active {
@@ -77,6 +78,7 @@ img {
     position: fixed;
     z-index: 9999;
     height: 100%;
+    background: var(--bg-color);
 }
 
 .cart-title {
@@ -92,6 +94,15 @@ img {
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.total-section {
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .cart-img {
@@ -121,6 +132,8 @@ img {
     width: 2.4rem;
     text-align: center;
     font-size: 1rem;
+    background: none;
+    border: none;
 }
 
 .cart-remove {
@@ -131,34 +144,42 @@ img {
 
 .total {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-top: 1.5rem;
+    padding: 15px;
     border-top: 1px solid var(--text-color);
 }
 
 .total-title {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .total-price {
-    margin-left: .5rem;
+    font-size: 2rem;
+    margin-left: 2rem;
 }
 
 .btn-buy {
     display: flex;
+    justify-content: center;
     margin: 1.5rem auto 0 auto;
-    padding: 12px 20px;
+    width: 85%;
+    padding: 12px 55px;
     border: none;
-    background-color: var(--sec-color);
+    background: var(--sec-color);
     color: var(--bg-color);
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+    text-align: center;
+    transition: background 0.3s;
+    border-radius: 10px;
+
 }
 
 .btn-buy:hover {
-    background-color: var(--text-color);
+    background: var(--text-color);
 }
 
 #cart-close {
@@ -193,8 +214,6 @@ img {
 }
 
 .product-box:hover {
-    padding: 10px;
-    border: 1px solid var(--text-color);
     transition: .4s;
 }
 
@@ -203,6 +222,7 @@ img {
     aspect-ratio: 1/1;
     object-fit: cover;
     margin-bottom: .5rem;
+    background: lightgray;
 }
 
 .product-title {
@@ -229,6 +249,7 @@ img {
 .add-cart:hover {
     background-color: hsl(249, 32%, 17%);
 }
+
 /* ================ RESPONSIVE & BREAKPOINTS ============= */
 @media (max-width: 1080px) {
     .nav {

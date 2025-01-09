@@ -10,9 +10,7 @@
     <!-- CSS LINK =============================== -->
     <link rel="stylesheet" href="./css/shopping.css">
     <link rel="stylesheet" href="./css/merchmodal.css">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/swiper.css">
     <!-- BOXICONS =================================== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
@@ -61,15 +59,17 @@
                     </div>
 
                     <!-- TOTAL   -->
-                    <div class="total">
-                        <div class="total-title">Total</div>
-                        <div class="total-price">$0</div>
+                    <div class="total-section">
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-price">$0</div>
+                        </div>
+                        <!-- BUY BUTTON  -->
+                        <button type="button" class="btn-buy">Checkout</button>
                     </div>
-                    <!-- BUY BUTTON  -->
-                    <button type="button" class="btn-buy">Buy Now</button>
                     <!-- CART CLOSE  -->
                     <i class='bx bx-x' id="cart-close"></i>
-                </div>>
+                </div>
                 <div class="nav-close" id="nav-close"><i class="bx bx-x"></i></div>
             </ul>
         </div>
@@ -88,9 +88,12 @@
             <!-- BOX 1 -->
             <div class="product-box">
                 <img src="./res/WhiteShirtMerch.png" alt="" class="product-img" id="open-modal">
-                <h2 class="product-title">Nike Shoes</h2>
-                <span class="product-price">$79.5</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
+                <div class="info-section">
+                    <h2 class="product-title">Nike Shoes</h2>
+                    <span class="product-price">$79.5</span>
+                </div>
+
+                <!-- <i class='bx bx-shopping-bag add-cart'></i> -->
                 <dialog id="dialog">
                     <button id="close-modal" class="btn"><i class="fa-solid fa-xmark"></i></button>
                     <div class="main" id="about">
@@ -263,7 +266,7 @@
     </script>
     <script src="./js/swiper-bundle.min.js"></script>
     <!-- JS =============================== -->
-  
+
 </body>
 
 </html>
