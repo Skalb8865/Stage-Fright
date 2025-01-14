@@ -65,6 +65,7 @@ body {
 main {
     /* background: #F3F4F8; */
     min-height: 100dvh;
+    overflow-x: hidden;
 }
 
 .band,

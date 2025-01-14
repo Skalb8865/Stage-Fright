@@ -275,6 +275,7 @@ function handle_addCartItem() {
 
     // opens the cart when adding an item to the cart
     document.querySelector(".cart").classList.add("active");
+    cartOverlay.classList.add("active");
 
     // closes the modal
     document.getElementById('dialog').close();
