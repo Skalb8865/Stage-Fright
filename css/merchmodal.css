@@ -60,13 +60,13 @@ fieldset {
 
 
 
-.donate-now {
+.size-list {
     list-style-type: none;
     display: flex;
     gap: 10px;
 }
 
-.donate-now li {
+.size-list li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,35 +79,36 @@ fieldset {
     color: black;
 }
 
-.donate-now label,
-.donate-now input {
+.size-list label,
+.size-list input {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    cursor: pointer;
 }
 
-.donate-now input[type="radio"] {
+.size-list input[type="radio"] {
     opacity: 0.01;
     z-index: 100;
 }
 
-.donate-now input[type="radio"]:checked+label,
+.size-list input[type="radio"]:checked+label,
 .Checked+label {
     background: black;
     color: white;
 }
 
-.donate-now label {
+.size-list label {
     padding: 5px;
     border: 1px solid #CCC;
     cursor: pointer;
     z-index: 90;
 }
 
-.donate-now label:hover {
+.size-list label:hover {
     background: #DDD;
 }
 
