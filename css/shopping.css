@@ -78,13 +78,13 @@
 }
 
 .total-section {
-    height: 250px;
+    height: 215px;
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
     background: var(--bg-color);
-    border-top: 3px solid  black;
+    border-top: 2px solid  black;
 }
 
 .price-section{
@@ -153,20 +153,20 @@
     margin: 1.5rem auto 0 auto;
     width: 85%;
     padding: 12px 55px;
-    border: none;
-    background: var(--sec-color);
+    border: 1px solid var(--text-color);
+    background: var(--text-color);
     color: var(--bg-color);
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     text-align: center;
     transition: background 0.3s;
-    border-radius: 10px;
-
+    border-radius: 3px;
 }
 
 .btn-buy:hover {
-    background: var(--text-color);
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 #cart-close {
