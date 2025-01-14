@@ -28,6 +28,19 @@
     text-align: left;
 }
 
+.about-button{
+    border: 1px solid black;
+    background: black;
+    color: white;
+    transition: background 0.3s;
+    padding: 5px;
+}
+
+.about-button:hover{
+    background: white;
+    color: black;
+}
+
 .about-img {
     width: 25rem;
     height: 25rem;
