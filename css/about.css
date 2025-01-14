@@ -67,6 +67,7 @@ button:hover {
     border-style:  solid double;
     border-width: 5px;
     border-color:var(--primary-dark) ;
+    padding-left: 25px;
 }
 
 .band-history h3{
@@ -96,6 +97,7 @@ button:hover {
     padding-bottom: 25px;
     color: var(--background-dark);
     text-decoration: underline;
+    
 }
 
 .band-wrapper{
