@@ -71,38 +71,32 @@
     height: 90%;
     width: 87%;
     z-index: 1;
-    padding: 100px 40px 144px 40px;
+    padding: 100px 40px 100px 40px;
     text-transform: uppercase;
-    background: var(--background-light);
 }
 
-.main_content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 .main_img--container {
     justify-self: center;
 }
+
 .main_img--card {
     width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
 }
+
 .main_img--card img {
     border-radius: 10px;
 }
+
 .main_content h1 {
     background: linear-gradient(to right, #DC0000, #850000);
     background-clip: text;
-    color: transparent !important;
+    color: transparent;
     font-size: 4rem;
-    margin-bottom: 22px;
     text-transform: uppercase;
-    align-self: center;
 }
 /* ===========This is for th images that link to another album================================ */
 
@@ -111,41 +105,34 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    
 }
 .OtherAlbumsCards{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:10%;
-    width: 10%;
     gap: 15px;
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
 .OtherAlbumsCards img{
+    width: 425px;
     border-radius: 10px;
 }
 
-.H1Container{
-    align-self: center;
-    margin-right: auto;
-    margin-left: auto;
-    height:10%;
-    width: 800px;
-    flex-wrap: wrap;
-    cursor: grab;
-
+.main_contentV2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .main_contentV2 h1 {
     background: linear-gradient(to right, #DC0000, #850000);
     background-clip: text;
-    color: transparent !important;
-    font-size: 4rem;
+    color: transparent;
+    font-size: 3rem;
     margin-bottom: 32px;
     text-transform: uppercase;
-    padding-right: auto;
     flex-wrap: wrap;
 }
 /* ================================================================================================================================== */
@@ -227,8 +214,6 @@
         display: flex;
         justify-content: center;
         /* padding-left: 0px; */
-        margin-right: auto;
-        margin-left: 180px;
        
     }
 
@@ -258,6 +243,7 @@
     .main_content p {
         margin-bottom: 1.5rem;
     }
+    
     .OtherAlbumsCards img{
         border-radius: 10px;
         height:450px;
@@ -309,17 +295,6 @@
 /********************************************/
 /*Main Section Styling for Mobile Devices*/
 @media screen and (max-width: 600px) {
-    .main_img--container {
-        padding-left: 0;
-        margin-right: 130px;
-        margin-left: 35px;
-        
-    }
-
-    .main_img--card {
-        height: 250px;
-        width: 250px;
-    }
 
     .main_content {
         padding-top: 10px;
