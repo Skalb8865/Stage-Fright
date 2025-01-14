@@ -1,0 +1,236 @@
+/* =======================================  */
+/* HEADER  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 2rem;
+}
+
+#cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* MERCH ITEM */
+.merch-item {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.merch-item-container {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.merch-item-image {
+    flex: 1;
+    text-align: center;
+}
+
+.merch-item-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.merch-item-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.merch-item-details h2 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 2rem;
+    color: #333;
+}
+
+.merch-item-details h3 {
+    font-size: 1.5rem;
+    color: #e60000;
+}
+
+.merch-item-details label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.size-selector {
+    margin: 20px 0;
+}
+
+.size-options {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.size-options li {
+    margin: 0 10px;
+}
+
+.size-options input[type="radio"] {
+    display: none;
+}
+
+.size-options label {
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.size-options input[type="radio"]:checked + label {
+    color: #e60000;
+}
+
+.add-cart {
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-cart:hover {
+    background-color: #cc0000;
+}
+
+/* YOU MAY ALSO LIKE */
+.you-may-also-like {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.you-may-also-like h2 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.related-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.related-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.related-item h3 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.related-item span {
+    font-size: 1rem;
+    color: #e60000;
+}
+
+/* CART */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 450px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background: gray;
+    box-shadow: -2px solid 4px hsl(0 4% 15% / 10%);
+    transition: 1.5s;
+    z-index: 9999;
+}
+
+.cart.active {
+    right: 0;
+    transition: .5s;
+    padding-left: 16px;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 9999;
+    height: 100%;
+    background: gray;
+}
+
+.cart-content {
+    height: 606px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.cart-title {
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.total-title {
+    font-family: 'Rock Salt', cursive;
+}
+
+.total-price {
+    color: #e60000;
+}
+
+.btn.checkout {
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn.checkout:hover {
+    background-color: #cc0000;
+}

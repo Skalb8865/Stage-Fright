@@ -235,24 +235,27 @@ function addEvents() {
 function handle_addCartItem() {
     let product = this.closest('.product-box');
     let title = product.querySelector(".product-title").innerHTML;
-    let price = product.querySelector(".product-price").innerHTML;
+    let price = parseFloat(product.querySelector(".product-price").innerHTML.replace('$', ''));
     let imgSrc = product.querySelector(".product-img").src;
+    let size = document.querySelector('input[name="size"]:checked').nextElementSibling.innerHTML;
+    let quantity = parseInt(document.getElementById('quantity').value);
 
     let newToAdd = {
         title,
         price,
         imgSrc,
-        quantity: 1
+        size,
+        quantity
     };
 
     // handles if the item has already been added to the cart
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    let existingItem = cart.find((el) => el.title == newToAdd.title);
+    let existingItem = cart.find((el) => el.title == newToAdd.title && el.size == newToAdd.size);
     if (existingItem) {
-        // if item has already been added, then increase the item quantity by 1 to a max of 10
-        existingItem.quantity = Math.min(existingItem.quantity + 1, 10);
+        // if item has already been added, then increase the item quantity by the selected quantity to a max of 10
+        existingItem.quantity = Math.min(existingItem.quantity + quantity, 10);
     } else {
-        // if item isnt already in the cart, the add the item to the cart
+        // if item isn't already in the cart, then add the item to the cart
         cart.push(newToAdd);
     }
 
@@ -261,19 +264,22 @@ function handle_addCartItem() {
 
     // updates the cart display
     updateCartDisplay();
-    
+
     // opens the cart when adding an item to the cart
     document.querySelector(".cart").classList.add("active");
+
+    // closes the modal
+    document.getElementById('dialog').close();
 }
 
 function updateCartDisplay() {
     const cartContent = document.querySelector(".cart-content");
     cartContent.innerHTML = '';
-    
+
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    
+
     cart.forEach(item => {
-        let cartBoxElement = CartBoxComponent(item.title, item.price, item.imgSrc, item.quantity);
+        let cartBoxElement = CartBoxComponent(item.title, item.price, item.imgSrc, item.size, item.quantity);
         let newNode = document.createElement("div");
         newNode.innerHTML = cartBoxElement;
         cartContent.appendChild(newNode);
@@ -286,28 +292,12 @@ function updateCartDisplay() {
 function handle_removeCartItem() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let title = this.parentElement.querySelector(".cart-product-title").innerHTML;
-    cart = cart.filter(el => el.title != title);
+    let size = this.parentElement.querySelector(".cart-size").innerHTML.split(": ")[1];
+    
+    cart = cart.filter(el => !(el.title == title && el.size == size));
     localStorage.setItem('cart', JSON.stringify(cart));
     
     updateCartDisplay();
-}
-
-function handle_decreaseQuantity() {
-    let quantitySpan = this.parentElement.querySelector(".cart-quantity");
-    let currentQuantity = parseInt(quantitySpan.textContent);
-    if (currentQuantity > 1) {
-        quantitySpan.textContent = currentQuantity - 1;
-        updateCartItem(this, currentQuantity - 1);
-    }
-}
-
-function handle_increaseQuantity() {
-    let quantitySpan = this.parentElement.querySelector(".cart-quantity");
-    let currentQuantity = parseInt(quantitySpan.textContent);
-    if (currentQuantity < 10) {
-        quantitySpan.textContent = currentQuantity + 1;
-        updateCartItem(this, currentQuantity + 1);
-    }
 }
 
 function updateCartItem(button, newQuantity) {
@@ -321,48 +311,15 @@ function updateCartItem(button, newQuantity) {
     updateTotal();
 }
 
-function handle_buyOrder() {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    if (cart.length <= 0) {
-     // shows the modal
-    let modal = document.getElementById("orderModal");
-    modal.style.display = "block";
-
-    // closes the modal when clicking on the x
-    let span = document.getElementsByClassName("close")[0];
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // closes the modal when clicking outside of it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-        return;
-    }
-    localStorage.removeItem('cart');
-    
-    // opens the checkout page
-    location.href = "checkout.html";
-    
-    // closes the cart
-    document.querySelector(".cart").classList.remove("active");
-
-    updateCartDisplay();
-}
-
-// =========== UPDATE & RERENDER FUNCTIONS =========
 function updateTotal() {
     let cartBoxes = document.querySelectorAll(".cart-box");
-    const totalElement = document.querySelector(".cart .total-price"); 
+    const totalElement = document.querySelector(".cart .total-price");
     let total = 0;
     cartBoxes.forEach((cartBox) => {
         // gets the price of each item that is in the cart and multiplies it by its quantity then adds it to the total
         let priceElement = cartBox.querySelector(".cart-price");
         let price = parseFloat(priceElement.innerHTML.replace("$", ""));
-        let quantity = cartBox.querySelector(".cart-quantity").textContent;
+        let quantity = parseInt(cartBox.querySelector(".cart-quantity").textContent.replace("Quantity: ", ""));
         total += price * quantity;
     });
 
@@ -372,20 +329,63 @@ function updateTotal() {
     totalElement.innerHTML = "$" + total;
 }
 
+function handle_buyOrder() {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    if (cart.length <= 0) {
+        // shows the modal
+        let modal = document.getElementById("orderModal");
+        modal.style.display = "block";
+
+        // closes the modal when clicking on the x
+        let span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // closes the modal when clicking outside of it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        return;
+    }
+    localStorage.removeItem('cart');
+
+    // opens the checkout page
+    location.href = "checkout.html";
+
+    // closes the cart
+    document.querySelector(".cart").classList.remove("active");
+
+    updateCartDisplay();
+}
+
+// =========== UPDATE & RERENDER FUNCTIONS =========
+function handle_removeCartItem() {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let title = this.parentElement.querySelector(".cart-product-title").innerHTML;
+    let size = this.parentElement.querySelector(".cart-size").innerHTML.split(": ")[1];
+    
+    cart = cart.filter(el => !(el.title == title && el.size == size));
+    localStorage.setItem('cart', JSON.stringify(cart));
+    
+    updateCartDisplay();
+}
+
 // ============= HTML COMPONENTS =============
-function CartBoxComponent(title, price, imgSrc, quantity) {
-    // outputs the HTML for each item that gets added to the cart (title, price, img, and its quantity)
+function CartBoxComponent(title, price, imgSrc, size, quantity) {
+    // outputs the HTML for each item that gets added to the cart (title, price, img, size, and its quantity)
     return `
     <div class="cart-box">
         <img src="${imgSrc}" alt="" class="cart-img">
         <div class="detail-box">
-            <div class="cart-product-title">${title}</div>
-            <div class="cart-price">${price}</div>
-            <div class="cart-quantity-control">
-                <button class="quantity-btn minus">-</button>
-                <span class="cart-quantity">${quantity}</span>
-                <button class="quantity-btn plus">+</button>
+            <div class="price-section">
+                <div class="cart-product-title">${title}</div>
+                <div class="cart-price">$${price.toFixed(2)}</div>
             </div>
+            <div class="cart-size">Size: ${size}</div>
+            <div class="cart-quantity">Quantity: ${quantity}</div>
         </div>
         <i class='bx bxs-trash-alt cart-remove'></i>
     </div>`;

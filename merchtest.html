@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch Item</title>
+    <link rel="stylesheet" href="css/merchtest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Stage Fright Merch</h1>
+        <div id="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+    </header>
+
+    <section class="merch-item">
+        <div class="merch-item-container">
+            <div class="merch-item-image">
+                <img src="./res/WhiteShirtMerch.png" alt="Stage fright long sleeve">
+            </div>
+            <div class="merch-item-details">
+                <h2>Stage fright long sleeve</h2>
+                <h3>$21.99</h3>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+
+                <div class="size-selector">
+                    <label>Size:</label>
+                    <ul class="size-options">
+                        <li>
+                            <input type="radio" name="size" id="size-s" />
+                            <label for="size-s">S</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="size" id="size-m" />
+                            <label for="size-m">M</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="size" id="size-l" />
+                            <label for="size-l">L</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="size" id="size-xl" />
+                            <label for="size-xl">XL</label>
+                        </li>
+                    </ul>
+                </div>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="you-may-also-like">
+        <h2>You May Also Like</h2>
+        <div class="related-items">
+            <div class="related-item">
+                <img src="./res/three-panel-fleece-hoodie.jpg" alt="Three Panel Fleece Hoodie">
+                <h3>Three Panel Fleece Hoodie</h3>
+                <span>$29.99</span>
+            </div>
+            <div class="related-item">
+                <img src="./res/NYX.png" alt="Metal Sunglasses">
+                <h3>Metal Sunglasses</h3>
+                <span>$32.99</span>
+            </div>
+            <div class="related-item">
+                <img src="./res/hatMerch.png" alt="PS5 Controller">
+                <h3>PS5 Controller</h3>
+                <span>$12.99</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content"></div>
+        <div class="total">
+            <div class="total-title">Total:</div>
+            <div class="total-price">$0.00</div>
+        </div>
+        <button class="btn checkout">Checkout</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
