@@ -174,15 +174,23 @@
 const cartIcon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".cart");
 const closeCart = document.querySelector("#cart-close");
+const cartOverlay = document.querySelector(".cart-overlay");
 
 // adds the class active to the cart when the cart icon is clicked
 cartIcon.addEventListener("click", () => {
     cart.classList.add("active");
+    cartOverlay.classList.add("active");
 });
 
 // removes the class active from the cart when the close icon is clicked
 closeCart.addEventListener("click", () => {
     cart.classList.remove("active");
+    cartOverlay.classList.remove("active");
+});
+
+cartOverlay.addEventListener("click", () => {
+    cart.classList.remove("active");
+    cartOverlay.classList.remove("active");
 });
 
 // starts when the document is ready
