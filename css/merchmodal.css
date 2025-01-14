@@ -26,14 +26,6 @@ dialog {
     overflow-x: hidden;
 }
 
-.Size {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-}
-
 
 select {
     padding: 6px;
@@ -73,7 +65,7 @@ fieldset {
     text-align: center;
     float: left;
     margin: 0 5px 0 0;
-    width: 60px;
+    width: 75px;
     height: 40px;
     position: relative;
     color: black;
