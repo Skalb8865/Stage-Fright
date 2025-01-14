@@ -24,15 +24,6 @@ function linkAction() {
 navLink.forEach((link) => link.addEventListener("click", linkAction));
 
 
-// CHANGE THE BACKGROUND ON SCROLL =========================
-function changeHeaderColor() {
-    const nav = document.getElementById("header");
-
-    if (this.scrollY >= 200) nav.classList.add("scroll-header");
-    else nav.classList.remove("scroll-header");
-}
-window.addEventListener("scroll", changeHeaderColor);
-
 /*--------------------------------------album1,2,3 js--------------------------------*/
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar_menu');
