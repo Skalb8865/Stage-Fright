@@ -201,6 +201,10 @@
     border: 1px solid black;
 }
 
+.info-section{
+    padding: 10px;
+}
+
 .product-box:hover {
     transition: .4s;
 }
@@ -230,7 +234,6 @@
     padding: 10px;
     width: 25%;
     border: none;
-
 }
 
 .add-cart:hover {
