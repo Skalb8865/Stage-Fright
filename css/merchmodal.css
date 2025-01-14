@@ -1,8 +1,3 @@
-form {
-    margin: 10px auto;
-    padding: 10px 20px;
-}
-
 .btn {
     font-size: 2rem;
     cursor: grab;   
@@ -17,38 +12,9 @@ form {
 }
 
 dialog {
-    height: 600px;
-    width: 1000px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
     overflow-x: hidden;
-}
-
-
-select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
-}
-
-
-fieldset {
-    margin-bottom: 30px;
-    border: none;
-}
-
-.number {
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    font-size: 0.8em;
-    margin-right: 4px;
-    line-height: 30px;
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-    border-radius: 100%;
 }
 
 
@@ -64,8 +30,7 @@ fieldset {
     align-items: center;
     text-align: center;
     float: left;
-    margin: 0 5px 0 0;
-    width: 75px;
+    width: 95px;
     height: 40px;
     position: relative;
     color: black;
@@ -104,9 +69,6 @@ fieldset {
     background: #DDD;
 }
 
-
-
-
 .main_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -129,19 +91,15 @@ fieldset {
     margin-left: 20px;
 }
 
-.main_img--container {
-    text-align: center;
-}
 
 .main_img--card {
     border: 3px solid #f7f7f7;
-    margin: 10px;
+    margin: 10px 0px 10px 10px;
     height: 450px;
     width: 450px;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
-    font-size: 2rem;
 }
 
 .main_img--card img{

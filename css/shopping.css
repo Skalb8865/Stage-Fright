@@ -202,6 +202,7 @@
 /* SHOP SECTION  */
 .shop {
     margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 .section-title {
@@ -254,7 +255,7 @@
     border: 1px solid var(--text-color);
     cursor: pointer;
     padding: 10px;
-    width: 25%;
+    width: 35%;
     transition: all 0.3s;
 }
 
