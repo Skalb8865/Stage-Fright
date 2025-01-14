@@ -236,6 +236,7 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     margin-bottom: .5rem;
+    cursor: pointer;
 }
 
 .product-title {
