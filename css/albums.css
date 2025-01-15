@@ -91,6 +91,10 @@
     border-radius: 10px;
 }
 
+.main_content{
+    padding: 25px;
+}
+
 .main_content h1 {
     background: linear-gradient(to right, #DC0000, #850000);
     background-clip: text;

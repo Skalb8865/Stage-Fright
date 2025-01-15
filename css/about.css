@@ -28,7 +28,7 @@
     text-align: left;
 }
 
-.about-button{
+/* .about-button{
     border: 1px solid black;
     background: black;
     color: white;
@@ -39,7 +39,7 @@
 .about-button:hover{
     background: white;
     color: black;
-}
+} */
 
 .about-img {
     width: 25rem;
