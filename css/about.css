@@ -28,6 +28,19 @@
     text-align: left;
 }
 
+.about-button{
+    border: 1px solid black;
+    background: black;
+    color: white;
+    transition: background 0.3s;
+    padding: 5px;
+}
+
+.about-button:hover{
+    background: white;
+    color: black;
+}
+
 .about-img {
     width: 25rem;
     height: 25rem;
@@ -45,61 +58,12 @@
     font-size: 1.3rem;
     margin: 0 2rem;
     text-align: justify;
+    padding-bottom: 1rem;
 }
 
-button {
-    font-size: 1.5rem;
-    cursor:pointer
+.about-info a{
+    padding-left: 2rem;
 }
-
-button:hover {
-    transition: 0.4s ease;
-}
-
-.band-history {
-    flex-basis: auto;
-    padding: 7px;
-    border-style:  solid double;
-    border-width: 5px;
-    border-color:var(--primary-dark) ;
-}
-
-.band-history h3{
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: var(--primary-dark);
-}
-
-.band-header {
-    font-weight: 800;
-    font-size: 50px;
-    text-transform: uppercase;
-    color: var(--background-dark);
-    text-align: center;
-    margin: 0 0 3rem 0;
-    padding-bottom: 18px;
-}
-
-
-.band-history h1 {
-    margin-top: 2rem;
-    color: var(--font-darkest);
-}
-
-.band-history p {
-    padding-top: 2px;
-    padding-bottom: 15px;
-    color: var(--font-dark);
-}
-
-.band-wrapper{
-    padding-bottom: 15px;
-   align-items: center 
-}
-
-
-
-
 
 
 /* =========== Member Section Start =========== */
