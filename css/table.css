@@ -47,14 +47,17 @@ td:nth-child(even) {
         width: 85%;
         height: 400px;
         color: aliceblue;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         gap: 15px;
         cursor: grab;
         flex-wrap: wrap;
-        opacity: 0%;
         
+    }
+
+    .tour-cards{
+        display: flex;
     }
 
     td,

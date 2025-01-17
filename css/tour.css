@@ -47,7 +47,6 @@
     margin: 10px;
     border-radius: 8px;
     overflow: hidden;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -55,7 +54,7 @@
     text-align: center;
     font-size: 14px;
     transition: 0.35s ease;
-    opacity: 0%;
+    display: none;
 }
 
 .tour-cards:hover {
