@@ -77,7 +77,6 @@
 
             <div class="nav-open" id="nav-open"><i class="bx bx-grid-alt"></i></div>
         </nav>
-        <div class="cart-overlay"></div>
     </header>
 
     <main>
@@ -91,24 +90,24 @@
                 <div class="product-box">
                     <img src="./res/WhiteShirtMerch.png" alt="" class="product-img" id="open-modal">
                     <div class="info-section">
-                        <h2 class="product-title">Stage Fright White Long Sleeve</h2>
-                        <span class="product-price">$22.99</span>
+                        <h2 class="product-title">Nike Shoes</h2>
+                        <span class="product-price">$21.99</span>
                     </div>
 
                     <!-- <i class='bx bx-shopping-bag add-cart'></i> -->
                     <dialog id="dialog">
-                        <div class="close-merch--modal">
-                            <button id="close-modal" class="btn"><i class="fa-solid fa-xmark"></i></button>
-                        </div>
+                        <button id="close-modal" class="btn"><i class="fa-solid fa-xmark"></i></button>
                         <div class="main" id="about">
                             <div class="main_container">
                                 <div class="main_img--container">
                                     <div class="main_img--card"><img src="./res/WhiteShirtMerch.png" alt=""></div>
                                 </div>
                                 <div class="main_content">
-                                    <h1>Stage Fright White Long Sleeve</h1>
-                                    <h2>$22.99</h2>
-
+                                    <h1>Stage fright long sleeve </h1>
+                                    <h2>$21.99</h2>
+                                    <label style="color: black;" for="quantity">Quantity:</label>
+                                    <input style="width: 100px;" type="number" id="quantity" name="quantity" min="1"
+                                        max="10" value="1">
 
                                     <ul class="size-list">
                                         <li>
@@ -116,7 +115,7 @@
                                             <label for="size">S</label>
                                         </li>
                                         <li>
-                                            <input type="radio" name="size" checked="checked" />
+                                            <input type="radio" name="size" />
                                             <label for="size">M</label>
                                         </li>
                                         <li>
@@ -132,19 +131,7 @@
                                             <label for="size">XXL</label>
                                         </li>
                                     </ul>
-                                    <div style="display: flex; gap: 10px; align-items: center; text-align: center;">
-
-                                        <div class="number-input">
-                                            <button
-                                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
-                                            <input class="quantity" id="quantity" min="1" max="10" name="quantity" value="1" type="number">
-                                            <button
-                                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                class="plus"></button>
-                                        </div>
-
-                                        <button class="add-cart">Add To Cart</button>
-                                    </div>
+                                    <button class="add-cart">Add To Cart</button>
                                 </div>
                             </div>
 
@@ -156,31 +143,33 @@
                 </div>
                 <!-- BOX 2 -->
                 <div class="product-box">
-                    <img src="./res/Prometheuszoom.png" alt="" class="product-img" id="open-2-modal">
+                    <img src="./res/Acanthazoom.png" alt="" class="product-img" id="open-2-modal">
                     <div class="info-section">
-                        <h2 class="product-title">Prometheus Vinyl</h2>
-                        <span class="product-price">$27.99</span>
+                        <h2 class="product-title">BACKPACK</h2>
+                        <span class="product-price">$59.99</span>
                     </div>
 
                     <dialog id="dialog2">
-                        <div class="close-merch--modal">
-                            <button id="close-2-modal" class="btn"><i class="fa-solid fa-xmark"></i></button>
-                        </div>
+                        <button id="close-2-modal" class="btn"><i class="fa-solid fa-xmark"></i></button>
                         <div class="main" id="about">
                             <div class="main_container">
                                 <div class="main_img--container">
-                                    <div class="main_img--card"><img src="./res/Prometheuszoom.png" alt=""></div>
+                                    <div class="main_img--card"><img src="./res/Acanthazoom.png" alt=""></div>
                                 </div>
                                 <div class="main_content">
-                                    <h1>Prometheus Vinyl</h1>
-                                    <h2>$27.99</h2>
+                                    <h1>Stage fright long sleeve </h1>
+                                    <h2>$59.99</h2>
+                                    <label style="color: black;" for="quantity">Quantity:</label>
+                                    <input style="width: 100px;" type="number" id="quantity" name="quantity" min="1"
+                                        max="10" value="1">
+
                                     <ul class="size-list">
                                         <li>
                                             <input type="radio" name="size" />
                                             <label for="size">S</label>
                                         </li>
                                         <li>
-                                            <input type="radio" name="size" checked="checked" />
+                                            <input type="radio" name="size" />
                                             <label for="size">M</label>
                                         </li>
                                         <li>
@@ -196,19 +185,7 @@
                                             <label for="size">XXL</label>
                                         </li>
                                     </ul>
-                                    <div style="display: flex; gap: 10px; align-items: center; text-align: center;">
-
-                                        <div class="number-input">
-                                            <button
-                                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
-                                            <input class="quantity" id="quantity" min="1" max="10" name="quantity" value="1" type="number">
-                                            <button
-                                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                class="plus"></button>
-                                        </div>
-
-                                        <button class="add-cart">Add To Cart</button>
-                                    </div>
+                                    <button class="add-cart">Add To Cart</button>
                                 </div>
                             </div>
 
@@ -220,128 +197,72 @@
                 </div>
                 <!-- BOX 3 -->
                 <div class="product-box">
-                    <img src="./res/AcanthaShirt.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">Acantha Black T-Shirt</h2>
-                        <span class="product-price">$18.99</span>
-                    </div>
+                    <img src="./res/three-panel-fleece-hoodie.jpg" alt="" class="product-img">
+                    <h2 class="product-title">METALBOTTLE</h2>
+                    <span class="product-price">$29.99</span>
                     <i class='bx bx-shopping-bag add-cart'></i>
                 </div>
                 <!-- BOX 4 -->
                 <div class="product-box">
                     <img src="./res/Nyxzoom.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">NYX Vinyl</h2>
-                        <span class="product-price">$27.99</span>
-                    </div>
+                    <h2 class="product-title">METAL SUNGLASSES</h2>
+                    <span class="product-price">$32.99</span>
                     <i class='bx bx-shopping-bag add-cart'></i>
                 </div>
                 <!-- BOX 5 -->
                 <div class="product-box">
                     <img src="./res/hatMerch.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">Stage Fright White Hat</h2>
-                        <span class="product-price">$12.99</span>
-                    </div>
+                    <h2 class="product-title">PS5 Controllegr</h2>
+                    <span class="product-price">$12.99</span>
                     <i class='bx bx-shopping-bag add-cart'></i>
                 </div>
                 <!-- BOX 6 -->
                 <div class="product-box">
-                    <img src="./res/boy_Hoodie.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">Stage Fright Logo Black Hoodie</h2>
-                        <span class="product-price">$24.99</span>
-                    </div>
+                    <img src="./res/Creatinefacts.png" alt="" class="product-img">
+                    <h2 class="product-title">Galaxy Z Fold</h2>
+                    <span class="product-price">$5.99</span>
                     <i class='bx bx-shopping-bag add-cart'></i>
                 </div>
                 <!-- BOX 7 -->
                 <div class="product-box">
-                    <img src="./res/Phone_Case.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">Logo Phone Case</h2>
-                        <span class="product-price">$9.99</span>
-                    </div>
+                    <img src="./res/boy_Hoodie.png" alt="" class="product-img">
+                    <h2 class="product-title">Nokon Camera</h2>
+                    <span class="product-price">$22.99</span>
                     <i class='bx bx-shopping-bag add-cart'></i>
                 </div>
                 <!-- BOX 8 -->
                 <div class="product-box">
-                    <img src="./res/pants.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">Unleash Your Inner Fright Black Sweatpants</h2>
-                        <span class="product-price">$16.99</span>
-                    </div>
+                    <img src="./res/Aidien.png" alt="" class="product-img">
+                    <h2 class="product-title">Apple Watch</h2>
+                    <span class="product-price">$29.99</span>
                     <i class='bx bx-shopping-bag add-cart'></i>
                 </div>
-                <!-- BOX 9 -->
-                <div class="product-box">
-                    <img src="./res/NyxShirt.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">NYX Black T-Shirt</h2>
-                        <span class="product-price">$18.99</span>
-                    </div>
+                 <!-- BOX 9 -->
+                 <div class="product-box">
+                    <img src="./res/Aidien.png" alt="" class="product-img">
+                    <h2 class="product-title">Apple Watch</h2>
+                    <span class="product-price">$29.99</span>
                     <i class='bx bx-shopping-bag add-cart'></i>
                 </div>
-                <!-- BOX 10 -->
-                <div class="product-box">
-                    <img src="./res/Beanie.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">Logo Black Beanie</h2>
-                        <span class="product-price">$12.99</span>
-                    </div>
+                 <!-- BOX 10 -->
+                 <div class="product-box">
+                    <img src="./res/Aidien.png" alt="" class="product-img">
+                    <h2 class="product-title">Apple Watch</h2>
+                    <span class="product-price">$29.99</span>
                     <i class='bx bx-shopping-bag add-cart'></i>
                 </div>
-                <!-- BOX 11 -->
-                <div class="product-box">
-                    <img src="./res/Nyxhood.png  " alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">NYX Black Hoodie</h2>
-                        <span class="product-price">$29.99</span>
-                    </div>
+                 <!-- BOX 11 -->
+                 <div class="product-box">
+                    <img src="./res/Aidien.png" alt="" class="product-img">
+                    <h2 class="product-title">Apple Watch</h2>
+                    <span class="product-price">$29.99</span>
                     <i class='bx bx-shopping-bag add-cart'></i>
                 </div>
-                <!-- BOX 12 -->
-                <div class="product-box">
-                    <img src="./res/backAirpod.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">Logo Airpod White Case</h2>
-                        <span class="product-price">$7.99</span>
-                    </div>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-                <!-- BOX 13 -->
-                <div class="product-box">
-                    <img src="./res/Prometheushood.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">Prometheus Black Hood</h2>
-                        <span class="product-price">$24.99</span>
-                    </div>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-                <!-- BOX 14 -->
-                <div class="product-box">
-                    <img src="./res/PrometheusShirt.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">Prometheus Black T-Shirt</h2>
-                        <span class="product-price">$18.99</span>
-                    </div>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-                <!-- BOX 15 -->
-                <div class="product-box">
-                    <img src="./res/AcanthaHood.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">Prometheus Black Hood</h2>
-                        <span class="product-price">$24.99</span>
-                    </div>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-                <!-- BOX 16 -->
-                <div class="product-box">
-                    <img src="./res/Acanthaclover.png" alt="" class="product-img">
-                    <div class="info-section">
-                        <h2 class="product-title">Acntha Vinyl</h2>
-                        <span class="product-price">$27.99</span>
-                    </div>
+                 <!-- BOX 12 -->
+                 <div class="product-box">
+                    <img src="./res/Aidien.png" alt="" class="product-img">
+                    <h2 class="product-title">Apple Watch</h2>
+                    <span class="product-price">$29.99</span>
                     <i class='bx bx-shopping-bag add-cart'></i>
                 </div>
             </div>

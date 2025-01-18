@@ -42,10 +42,10 @@
 }
 
 .tour-cards {
-    width: 430px;
-    height: 500px;
+    width: 90%;
+    height: 30%;
     margin: 10px;
-    border-radius: 8px;
+    border-radius: 2px;
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -93,7 +93,6 @@
 }
 
 .tour-cards a:hover {
-    opacity: 0%;
     cursor:pointer;
 }
 
