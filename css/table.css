@@ -4,13 +4,10 @@ table {
     width: 65%;
     height: 400px;
     color: aliceblue;
-
+    margin-bottom: 50px;
 }
-
-td,
-th,
-.tourbutton {
-    padding-left: 30px;
+.Location, .address{
+    padding-left: 20px;
 }
 
 tr {
