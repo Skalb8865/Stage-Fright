@@ -102,28 +102,6 @@
     cursor:pointer;
 }
 
-/* Increase the size of the cards when you hover over them */
-
-
-/* .tour-card-content h1 {
-    font-weight: 600;
-    font-size: 50px;
-    letter-spacing: 2px;
-    color: var(--font-lightest);
-    text-transform: uppercase;
-}
-
-.tour-card-content p {
-    font-weight: 500;
-    font-size: 25px;
-    letter-spacing: 2px;
-    color: var(--font-lightest);
-} */
-
-
-
-/* sets the height to zero so that the overlay doesn't show up */
-
 /* =========== Member Section End =========== */
 /* =========================================== */
 dialog {
@@ -171,4 +149,260 @@ dialog[open]::backdrop {
 .description {
     max-width: 40ch;
     margin: 1rem 0;
+}
+/* THIS IS THE TABLE CSS  */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 65%;
+    height: 400px;
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+.Location, .address{
+    padding-left: 20px;
+}
+
+tr {
+    border: 1px solid #da0d0d;
+    text-align: left;
+    padding: 8px;
+}
+
+tr,
+th,
+td:nth-child(even) {
+    background-color: hsl(0, 0%, 0%);
+}
+
+.tourbutton {
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(255, 255, 255);
+    border: 2px solid #f00b0b;
+}
+
+.tourbutton:hover {
+    background-color: #ec2222;
+    color: white;
+}
+
+/* ------------------------------------------------THIS IS MOBILE RESPONSIVENESS---------------------------------------------------- */
+@media screen and (max-width:1250px) {
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 85%;
+        height: 400px;
+        color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        cursor: grab;
+        flex-wrap: wrap;
+        display: none;
+        
+    }
+
+    .tour-cards{
+        display: flex;
+    }
+
+    td,
+    th,
+    .tourbutton {
+        padding-left: 30px;
+    }
+
+    tr {
+        border: 1px solid #da0d0d;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr,
+    th,
+    td:nth-child(even) {
+        background-color: hsl(0, 0%, 0%);
+    }
+
+    .tourbutton {
+        text-align: center;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white;
+        color: rgb(255, 255, 255);
+        border: 2px solid #f00b0b;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+
+    .tourbutton {
+        text-align: center;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white;
+        color: rgb(255, 255, 255);
+        border: 2px solid #f00b0b;
+    }
+
+    .tourbutton:hover {
+        background-color: #ec2222;
+        color: white;
+    }
+
+    @media screen and (max-width:450px) {
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 85%;
+            height: 400px;
+            color: aliceblue;
+        }
+
+        td,
+        th,
+        .tourbutton {
+            padding-left: 30px;
+        }
+
+        tr {
+            border: 1px solid #da0d0d;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr,
+        th,
+        td:nth-child(even) {
+            background-color: hsl(0, 0%, 0%);
+        }
+
+        .tourbutton {
+            text-align: center;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            background-color: white;
+            color: rgb(255, 255, 255);
+            border: 2px solid #f00b0b;
+        }
+
+        .tourbutton:hover {
+            background-color: #ec2222;
+            color: white;
+        }
+    }
+
+}
+@media screen and (max-width:850px) {
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 85%;
+        height: 400px;
+        color: aliceblue;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        cursor: grab;
+        flex-wrap: wrap;
+        
+    }
+
+    .tour-cards{
+        display: flex;
+    }
+
+    td,
+    th,
+    .tourbutton {
+        padding-left: 30px;
+    }
+
+    tr {
+        border: 1px solid #da0d0d;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr,
+    th,
+    td:nth-child(even) {
+        background-color: hsl(0, 0%, 0%);
+    }
+
+    .tourbutton {
+        text-align: center;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white;
+        color: rgb(255, 255, 255);
+        border: 2px solid #f00b0b;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+
+    .tourbutton {
+        text-align: center;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white;
+        color: rgb(255, 255, 255);
+        border: 2px solid #f00b0b;
+    }
+
+    .tourbutton:hover {
+        background-color: #ec2222;
+        color: white;
+    }
+
+    @media screen and (max-width:450px) {
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 85%;
+            height: 400px;
+            color: aliceblue;
+        }
+
+        td,
+        th,
+        .tourbutton {
+            padding-left: 30px;
+        }
+
+        tr {
+            border: 1px solid #da0d0d;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr,
+        th,
+        td:nth-child(even) {
+            background-color: hsl(0, 0%, 0%);
+        }
+
+        .tourbutton {
+            text-align: center;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            background-color: white;
+            color: rgb(255, 255, 255);
+            border: 2px solid #f00b0b;
+        }
+
+        .tourbutton:hover {
+            background-color: #ec2222;
+            color: white;
+        }
+    }
+
 }
