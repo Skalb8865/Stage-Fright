@@ -42,16 +42,16 @@ body {
 
 body::-webkit-scrollbar {
     width: 10px;
-  }
-   
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-   
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid slategrey;
-  }
+}
 
 .section-title {
     font-family: "Abel";
@@ -133,7 +133,7 @@ main {
 
 }
 
-.nav-logo{
+.nav-logo {
     list-style: none;
     text-decoration: none;
 }
@@ -517,25 +517,28 @@ main {
     text-align: left;
     outline: none;
     font-size: 15px;
-  }
-  
-  .active, .collapsible:hover {
+}
+
+.active,
+.collapsible:hover {
     background-color: #ffffff;
 
-  }
-  
-  .content {
+}
+
+.content {
     color: black;
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background-color: #ffffff;
     font-size: 19px;
-  }
-  .content p{
+}
+
+.content p {
     font-size: 15px;
-  }
-  /* ================Collapsibles ============= */
+}
+
+/* ================Collapsibles ============= */
 
 
 
@@ -884,4 +887,16 @@ main {
         width: 350px;
         height: 350px;
     }
+}
+
+
+.privacy-section {
+    margin-top: 150px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
