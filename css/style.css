@@ -329,17 +329,6 @@ main {
 
 
 
-
-.small_hr {
-    width: 35px;
-    color: var(--primary);
-    background-color: var(--primary);
-    margin-bottom: 30px;
-    border: none;
-    border-top: 5px solid var(--primary);
- 
-}
-
 .icon {
     color: black;
     cursor: pointer;
@@ -411,103 +400,6 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
-
-/***********************************************************/
-/*Footer Classes and Styling*/
-/**********************************************************/
-
-.footer_container {
-    background-color: var(--background-dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.footer_container p {
-    color: var(--font-light);
-    padding-bottom: 10px;
-    font-size: 18px;
-}
-
-.footer_links {
-    width: 400px;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-}
-
-.footer_link_wrapper {
-    display: flex;
-    margin-left: -150px;
-}
-
-.footer_link_items {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    text-align: left;
-    width: 100px;
-    margin-top: auto;
-}
-
-.footer_link_items h2 {
-    color:gray;
-    margin-bottom: 1rem;
-    font-size: 15px;
-    /*margin: 0 0 1rem 0;*/
-}
-
-.footer_link_items a {
-    color: var(--font-light);
-    font-size: 10px;
-    text-decoration: none;
-    margin-bottom: .5rem;
-    transition: .3s ease-out;
-}
-
-.footer_link_items a:hover {
-    color: var(--primary);
-    transition: .3s ease-out;
-}
-
-.website_rights {
-    color: var(--font-lightest);
-}
-
-
-@media screen and (max-width:1000px) {
-    .footer_link_wrapper {
-        flex-direction: column;
-    }
-
-    .footer_links {
-        padding-top: 1rem;
-    }
-}
-
-@media screen and (max-width:750px) {
-    .social_media_wrapper {
-        flex-direction: column;
-    }
-
-    .website_rights {
-        margin-bottom: 1.5rem;
-    }
-
-    .social_media {
-        margin-bottom: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .footer_link_items {
-        margin: 0;
-        padding: 10px;
-        width: 70%;
-    }
-}
-
 /* ===============Collapsibles============ */
 .collapsible {
     background-color: #ffffff;
@@ -523,7 +415,10 @@ main {
     align-items: center;
     gap: 15px;
     margin-bottom: 20px;
+    transition: .3s ;
 }
+
+/* ----------------------------*/
 
 .active,
 .collapsible:hover {
@@ -538,7 +433,7 @@ main {
     overflow: hidden;
     background-color: #ffffff;
     font-size: 19px;
-    transition: .3;
+    transition: .3s;
 }
 
 .content p {
@@ -546,15 +441,17 @@ main {
     width: 50%;
     text-align: center;
     margin-left: 300px;
+    transition: .3s ;
 }
-.Headingpolicy{
+
+.Headingpolicy {
     font-size: 3.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-  margin-bottom: -50px;
+    margin-bottom: -50px;
 }
 
 /* ================Collapsibles ============= */
@@ -592,6 +489,16 @@ main {
         transition: 0.4s;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
         z-index: 99999;
+    }
+
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+
+    .social-icons {
+        text-align: center
     }
 }
 
@@ -907,6 +814,7 @@ main {
         height: 350px;
     }
 }
+
 .privacy-section {
     margin-top: 150px;
     height: 100%;
