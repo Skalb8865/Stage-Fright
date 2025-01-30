@@ -401,63 +401,6 @@ main {
 }
 
 /* ===============Collapsibles============ */
-.collapsible {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    padding: 18px;
-    width: 70%;
-    border-top: #0a0a0a;
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-    transition: .3s ;
-}
-
-/* ----------------------------*/
-
-.active,
-.collapsible:hover {
-    background-color: #ffffff;
-
-}
-
-.content {
-    color: black;
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #ffffff;
-    font-size: 19px;
-    transition: .3s;
-}
-
-.content p {
-    font-size: 15px;
-    width: 50%;
-    text-align: center;
-    margin-left: 300px;
-    transition: .3s ;
-}
-
-.Headingpolicy {
-    font-size: 3.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: -50px;
-}
-
-/* ================Collapsibles ============= */
-
-
-
 
 /* =========== Footer Section End ========== */
 /* ========================================= */
