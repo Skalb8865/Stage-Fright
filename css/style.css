@@ -294,7 +294,7 @@ main {
     font-weight: 800;
     margin: 50% 0 0 0;
     font-size: 35px;
-    color: var(--font-light);
+    color: var(--font-lightest);
     text-align: center;
 }
 
