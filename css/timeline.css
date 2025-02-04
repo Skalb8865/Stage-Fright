@@ -46,7 +46,11 @@ body {
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+.TL_title{
+  font-size: 2.5rem;
+  color: white;
+  margin-left: -450px;
+}
 .timeline ul {
   padding: 50px 0;
 }
@@ -126,9 +130,10 @@ time {
   transition: background 0.5s ease-in-out;
 }
 
-.timeline ul li.in-view::after {
+.timeline ul  li.in-view::after {
   background: white;
 }
+
 
 .timeline ul li div {
   visibility: hidden;
