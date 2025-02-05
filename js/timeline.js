@@ -1,33 +1,20 @@
-(function () {
-    "use strict";
-  
-    // define variables
-    var items = document.querySelectorAll(".timeline li");
-  
-    // check if an element is in viewport
-    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-    function isElementInViewport(el) {
-      var rect = el.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
+const targets = document.querySelectorAll(".timeline ol li");
+const threshold = 0.5;
+const ANIMATED_CLASS = "in-view";
+
+function callback(entries, observer) {
+  entries.forEach((entry) => {
+    const elem = entry.target;
+    if (entry.intersectionRatio >= threshold) {
+      elem.classList.add(ANIMATED_CLASS);
+      observer.unobserve(elem);
+    } else {
+      elem.classList.remove(ANIMATED_CLASS);
     }
-  
-    function callbackFunc() {
-      for (var i = 0; i < items.length; i++) {
-        if (isElementInViewport(items[i])) {
-          items[i].classList.add("in-view");
-        }
-      }
-    }
-  
-    // listen for events
-    window.addEventListener("load", callbackFunc);
-    window.addEventListener("resize", callbackFunc);
-    window.addEventListener("scroll", callbackFunc);
-  })();
-  
+  });
+}
+
+const observer = new IntersectionObserver(callback, { threshold });
+for (const target of targets) {
+  observer.observe(target);
+}
