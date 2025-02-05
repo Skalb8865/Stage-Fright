@@ -23,6 +23,12 @@ body {
   font: normal 16px/1.5 "Inter", sans-serif;
   padding-bottom: 50px;
 }
+.bandPics{
+width: 300px;
+height: 200px;
+margin-left: 400px;
+}
+
 
 /* INTRO SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -160,6 +166,45 @@ h1 {
 
 /* MQ STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 1400px) {
+  .timeline ol li .item-inner {
+    padding: 20px 40px;
+  }
+
+  .timeline ol li .time-wrapper::before {
+    display: none;
+  }
+
+  .timeline ol li .time-wrapper::after {
+    left: -45px;
+    transform-origin: center;
+  }
+
+  .timeline ol li.in-view .time-wrapper::after {
+    transition-delay: 0s;
+  }
+
+  .timeline ol li.in-view time {
+    transition-delay: 0.5s;
+  }
+
+  .timeline ol li.in-view .details h3 {
+    transition-delay: 0.7s;
+  }
+
+  .timeline ol li.in-view .details p {
+    transition-delay: 0.9s;
+  }
+  p{
+  width: 400px;
+  }
+  .timeline {
+    margin-left: -1px;
+  }
+}
+
+
+
 @media (max-width: 700px) {
   .timeline ol li .item-inner {
     padding: 20px 40px;
@@ -188,6 +233,12 @@ h1 {
 
   .timeline ol li.in-view .details p {
     transition-delay: 0.9s;
+  }
+  p{
+  width: 400px;
+  }
+  .timeline {
+    margin-left: -1px;
   }
 }
 
