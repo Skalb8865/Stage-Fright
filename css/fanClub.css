@@ -94,12 +94,16 @@ img {
 .btn:hover {
     background-position: right;
 }
+.paragraph{
+    width: 600px;
+}
 
 .users-color-container {
     width: 800px;
     height: 800px;
     pointer-events: none;
     user-select: none;
+    margin-top: -200px;
 }
 
 .item {
