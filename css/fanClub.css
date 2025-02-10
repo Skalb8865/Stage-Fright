@@ -96,10 +96,10 @@ img {
 }
 
 .users-color-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
+    width: 800px;
+    height: 800px;
+    pointer-events: none;
+    user-select: none;
 }
 
 .item {
