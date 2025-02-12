@@ -30,10 +30,8 @@ img {
     grid-template-columns: 45% 50%;
     place-items: center;
     gap: 50px;
-    background: rgb(67, 69, 112);
-    background: radial-gradient(circle,
-            rgba(67, 69, 112, 1) 3%,
-            rgba(35, 36, 57, 1) 60%);
+    background: rgb(0, 0, 0);
+
     overflow: hidden;
     padding: 130px 80px;
 }
@@ -53,11 +51,11 @@ img {
 .gradient-text {
     font-family: "Tilt Neon", sans-serif;
     background-image: linear-gradient(90deg,
-            rgb(118, 167, 63) 0%,
-            rgb(51, 143, 118) 40%,
-            rgb(55, 141, 167) 50%,
-            rgb(117, 152, 242) 70%,
-            rgb(144, 118, 236) 100%);
+            rgb(211, 23, 23) 0%,
+            rgb(169, 30, 9) 40%,
+            rgb(212, 43, 13) 50%,
+            rgb(250, 17, 17) 70%,
+            rgb(225, 2, 2) 100%);
     color: transparent;
     background-size: contain;
     background-clip: text;
@@ -78,11 +76,11 @@ img {
     gap: 3px;
     max-width: max-content;
     background: linear-gradient(90deg,
-            rgb(118, 167, 63) 0%,
-            rgb(51, 143, 118) 40%,
-            rgb(55, 141, 167) 50%,
-            rgb(117, 152, 242) 70%,
-            rgb(144, 118, 236) 100%);
+            rgb(211, 23, 23) 0%,
+            rgb(169, 30, 9) 40%,
+            rgb(212, 43, 13) 50%,
+            rgb(250, 17, 17) 70%,
+            rgb(225, 2, 2) 100%);
     background-size: 200%;
     background-position: left;
     color: #fff;
@@ -101,12 +99,7 @@ img {
     background-position: right;
 }
 
-.users-color-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-}
+
 
 @keyframes fadeIn {
     0% {
@@ -128,7 +121,7 @@ img {
     align-items: center;
     gap: 20px;
     width: 100%;
-   height: 500px;
+    height: 500px;
     background: black;
     overflow: hidden;
 }
@@ -178,6 +171,20 @@ img {
     color: white;
 }
 
+
+
+ .tours-heading {
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 1215px) {
     .btn {
         font-size: 1rem;
@@ -205,6 +212,13 @@ img {
 
     .users-color-container {
         gap: 15px;
+        padding-bottom: -50px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+       height: 800px;
     }
 }
 
@@ -222,12 +236,19 @@ img {
     .users-color-container {
         grid-area: userscolorcontainer;
         gap: 20px;
+        padding-bottom: -50px;
     }
 
     .description {
         grid-area: description;
         padding: 0;
         text-align: center;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 800px;
     }
 
 }
@@ -239,6 +260,9 @@ img {
         padding: 30px 40px;
     }
 
-  
-
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 800px;
+    }
 }
