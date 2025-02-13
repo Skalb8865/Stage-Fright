@@ -2,6 +2,9 @@
 	margin: auto;
 	width: 520px;
 	margin-bottom: 200px;
+	text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .accordion input {
@@ -10,8 +13,9 @@
 
 .box {
 	position: relative;
-	background: white;
+	background: rgb(0, 0, 0);
 	height: 64px;
+	width: 600px;
 }
 
 .box:hover {
@@ -28,9 +32,17 @@
 	right: 0;
 	pointer-events: none;
 }
-
+.title{
+	color: aliceblue;
+	text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+body{
+	background-color: black;
+}
 div.box {
-	background: #000000;
+	background: #ffffff;
 	z-index: 100;
 	cursor: initial;
 }
@@ -39,14 +51,14 @@ div .box-title {
 	margin: 0;
 	font-weight: normal;
 	font-size: 16pt;
-	color: white;
+	color: rgb(243, 243, 243);
 	cursor: initial;
 }
 
 .box-title {
 	font-size: large;
 	font-weight: bold;
-	color: #000000;
+	color: #ffffff;
 	width: calc(100% - 40px);
 	height: 64px;
 	line-height: 64px;
@@ -72,7 +84,7 @@ div .box-title {
 	width: calc(100% - 40px);
 	padding: 0 20px 30px 20px;
 	font-size: 11pt;
-	color: rgba(0, 0, 0, .54);
+	color: rgba(255, 255, 255, 0.54);
 	display: none;
 	transform: rotate(0deg);
     transform-origin: 1rem 50%;
@@ -97,7 +109,7 @@ input:checked+.box {
 }
 
 input:checked+.box .box-title {
-	border-bottom: 1px solid rgba(0, 0, 0, .18);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 	transform: rotate(0deg);
     transform-origin: 1rem 50%;
     transition: 0.25s transform ease;
@@ -125,7 +137,7 @@ input:checked+.box .box-close {
 	left: 20px;
 	top: -2px;
 	transition: max-height 0.5s ease;
-	color: rgba(0, 0, 0, .54);
+	color: rgba(255, 255, 255, 0.54);
 }
 
 input:checked+section.box .box-title:before {
@@ -134,5 +146,5 @@ input:checked+section.box .box-title:before {
 .box-content p{
 	font-size: medium;
 	font-weight: 500;
-	color: #000000;
+	color: #ffffff;
 }
