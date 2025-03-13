@@ -1,0 +1,99 @@
+.tab {
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+}
+.tabcontent{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the tab content */
+
+
+.column {
+    padding: 0 10px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-top: 15px;
+    width: 450px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
