@@ -41,4 +41,29 @@
   .grid .item:nth-child(5) {
     grid-area: aside5;
   }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*Media Query */
+  @media screen and (max-width: 1000px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        "hero   hero   hero   hero"
+        "hero   hero   hero   hero"
+        "aside2 aside2 aside2 aside3"
+        "aside4 aside4 aside5 aside5";
+        }  
+    }
