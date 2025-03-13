@@ -1,0 +1,44 @@
+/* Bento Box Gallery */
+
+.grid {
+    background: hsl(36, 100%, 99%);
+    width: 100%;
+    max-width: 1500px;
+    height: 1000px;
+    display: grid;
+    gap: 1.5vw;
+    padding: 1vw;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hero hero hero hero aside2 aside2"
+      "hero hero hero hero aside2 aside2"
+      "hero hero hero hero aside2 aside2"
+      "hero hero hero hero aside2 aside2"
+      "aside3 aside3 aside4 aside4 aside5 aside5 ";
+  }
+
+
+  .item {
+    border: 2px solid #464545;
+    border-radius: 5px;
+  }
+  
+  .grid .item:nth-child(1) {
+    grid-area: hero;
+  }
+  .grid .item:nth-child(2) {
+    grid-area: aside2;
+  }
+  
+  .grid .item:nth-child(3) {
+    grid-area: aside3;
+  }
+  .grid .item:nth-child(4) {
+    grid-area: aside4;
+  }
+  
+  .grid .item:nth-child(5) {
+    grid-area: aside5;
+  }
+  
