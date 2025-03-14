@@ -1,6 +1,6 @@
 .tab {
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    
+    background-color: #2c2727;
     justify-content: center;
     align-items: center;
     width: 600px;
@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #000000;
 }
 
 /* Style the buttons inside the tab */
@@ -24,6 +25,7 @@
     font-size: 17px;
     justify-content: center;
     align-items: center;
+    color: azure;
 }
 .tabcontent{
     margin-left: auto;
@@ -31,19 +33,48 @@
     justify-content: center;
     align-items: center;
 }
+.Title{
+    float:left;
+    margin-top: -5px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-style: none none solid none;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    border-image: linear-gradient(to right, #ec1c1c 50%, transparent 50%) 100% 1;
+}
 
+.text{
+    margin-top: -12px;
+    float: left;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    text-align: left;
+}
+.payment{
+    float: right;
+    margin-top: 2px;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    border-bottom: #ec1c1c;
+    border-style: none none solid none;
     justify-content: center;
     align-items: center;
+    border-top: 3px;
+    color: azure;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
-    justify-content: center;
-    align-items: center;
+   
+    border-bottom: #ec1c1c;
+    border-style: none none solid none;
+    border-width: 5px;
+    color: azure;
 }
 
 /* Style the tab content */
@@ -79,14 +110,16 @@
     /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: #424040;
     margin-top: 15px;
     width: 450px;
-    height: 100px;
+    height: 145px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+    
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
