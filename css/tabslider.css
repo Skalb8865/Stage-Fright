@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     background-color: #000000;
+    flex-wrap: wrap;
 }
 
 /* Style the buttons inside the tab */
@@ -95,6 +96,7 @@
     align-items: center;
     grid-template-columns: 1fr 1fr;
     width: 1000px;
+    flex-wrap: wrap;
 }
 
 /* Clear floats after the columns */
