@@ -1,12 +1,16 @@
+body{
+    overflow-x: hidden;
+}
 .tab {
     
     background-color: #2c2727;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    width: 400px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 4px;
 }
 .Container{
     display: flex;
@@ -65,7 +69,7 @@
     border-style: none none solid none;
     justify-content: center;
     align-items: center;
-    border-top: 3px;
+    border-top: 15px;
     color: azure;
 }
 
@@ -83,20 +87,21 @@
 
 .column {
     padding: 0 10px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 450px;
+    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
 /* Remove extra left and right margins, due to padding in columns */
 .row {
     display: grid;
-    justify-content: center;
-    align-items: center;
     grid-template-columns: 1fr 1fr;
-    width: 1000px;
-    flex-wrap: wrap;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Clear floats after the columns */
@@ -111,24 +116,18 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     /* this adds the "card" effect */
     padding: 16px;
-    text-align: center;
     background-color: #424040;
-    margin-top: 15px;
-    width: 450px;
+    margin-top: 10px;
+    width: 420px;
     height: 145px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
     border-radius: 5px;
-    
+    margin-right: auto;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
     .column {
-        width: 100%;
-        display: block;
+        width: 90%;
         margin-bottom: 20px;
     }
 }
