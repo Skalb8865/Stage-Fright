@@ -26,7 +26,7 @@
 /* Bento Box Gallery */
 .grid {
     background: var(--font-dark);
-    width: 100%;
+    min-width: 100;
     max-width: 1500px;
     height: 1000px;
     display: grid;
@@ -37,13 +37,18 @@
     grid-template-areas:
       "hero hero hero hero aside2 aside2"
       "hero hero hero hero aside2 aside2"
-      "hero hero hero hero aside5 aside5"
+      "aside3 aside3 aside4 aside4 aside5 aside5"
       "aside3 aside3 aside4 aside4 aside5 aside5"
       "aside3 aside3 aside4 aside4 aside6 aside6"
       "aside3 aside3 aside4 aside4 aside6 aside6";
   }
 
 
+
+  img{
+    
+    height: 100%;
+  }
   .item {
     border: 5px solid var(--font-light);
     border-radius: 5px;
