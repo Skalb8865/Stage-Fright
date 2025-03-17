@@ -1,7 +1,31 @@
-/* Bento Box Gallery */
 
+
+/* Root for stylesheet*/
+:root {
+  --basically-black: #0a0a0a;
+
+  --primary: #DC0000;
+  --primary-dark: #850000;
+
+
+  --light-grey: #BDC4D0;
+  --grey: grey;
+  --dark-grey: #555756;
+
+  --background-light: #F3F4F8;
+  --background-dark: #0a0a0a;
+  --accent: #e5e4ea;
+
+
+  --font-lightest: #fff;
+  --font-light: #abaab4;
+  --font-dark: #333;
+  --font-darkest: #0a0a0a;
+}
+
+/* Bento Box Gallery */
 .grid {
-    background: hsl(36, 100%, 99%);
+    background: var(--font-dark);
     width: 100%;
     max-width: 1500px;
     height: 1000px;
@@ -13,15 +37,15 @@
     grid-template-areas:
       "hero hero hero hero aside2 aside2"
       "hero hero hero hero aside2 aside2"
-      "hero hero hero hero aside2 aside2"
-      "hero hero hero hero aside2 aside2"
+      "hero hero hero hero aside5 aside5"
       "aside3 aside3 aside4 aside4 aside5 aside5"
-      "aside6 aside6 aside6 aside6 aside6 aside6";
+      "aside3 aside3 aside4 aside4 aside6 aside6"
+      "aside3 aside3 aside4 aside4 aside6 aside6";
   }
 
 
   .item {
-    border: 5px solid #464545;
+    border: 5px solid var(--font-light);
     border-radius: 5px;
   }
   
