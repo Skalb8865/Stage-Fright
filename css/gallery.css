@@ -15,12 +15,13 @@
       "hero hero hero hero aside2 aside2"
       "hero hero hero hero aside2 aside2"
       "hero hero hero hero aside2 aside2"
-      "aside3 aside3 aside4 aside4 aside5 aside5 ";
+      "aside3 aside3 aside4 aside4 aside5 aside5"
+      "aside6 aside6 aside6 aside6 aside6 aside6";
   }
 
 
   .item {
-    border: 2px solid #464545;
+    border: 5px solid #464545;
     border-radius: 5px;
   }
   
@@ -41,7 +42,9 @@
   .grid .item:nth-child(5) {
     grid-area: aside5;
   }
-
+  .grid .item:nth-child(6) {
+    grid-area: aside6;
+  }
 
 
   /*Media Query */
