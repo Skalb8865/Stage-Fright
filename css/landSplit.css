@@ -1,0 +1,113 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full screen height container */
+.split-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Left and right side styles */
+.split {
+    flex: 1; /* Makes both sections take equal width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Left section */
+.left {
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.left:hover {
+    background-color: #2980b9; /* Darker blue when hovered */
+}
+
+/* Right section */
+.right {
+    background-color: #e74c3c;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.right:hover {
+    background-color: #c0392b; /* Darker red when hovered */
+}
+
+/* Heading and paragraph styles */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* On hover, make heading bolder and text more opaque */
+.split:hover h1 {
+    transform: scale(1.1); /* Slightly enlarge the heading */
+}
+
+.split:hover p {
+    opacity: 1; /* Make paragraph fully opaque */
+}
+
+/* Button styles */
+button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button styles for the left section */
+.left button {
+    background-color: white;
+    color: #3498db;
+}
+
+.left button:hover {
+    background-color: #2980b9;
+    color: white;
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Button styles for the right section */
+.right button {
+    background-color: white;
+    color: #e74c3c;
+}
+
+.right button:hover {
+    background-color: #c0392b;
+    color: white;
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+    }
+}
