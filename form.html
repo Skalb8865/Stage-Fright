@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Checkout</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: auto;
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .details, .summary {
+            flex: 1;
+            padding: 20px;
+        }
+        .summary {
+            background: #222;
+            border-radius: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background: #222;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: #444;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .timer {
+            font-size: 18px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="details">
+            <h2>1. Add your details</h2>
+            <p class="timer">Time remaining: <span id="countdown">08:42</span></p>
+            <input type="text" id="firstName" placeholder="First name">
+            <input type="text" id="lastName" placeholder="Last name">
+            <input type="email" id="email" placeholder="Email">
+            <button class="btn" onclick="updateSummary()">Continue</button>
+        </div>
+        <div class="summary">
+            <h3 id="eventName">Event Name</h3>
+            <p id="eventDate">Event Date</p>
+            <p id="eventLocation">Location</p>
+            <p><strong id="ticketType">Ticket Type</strong>: <span id="ticketPrice">$0.00</span></p>
+            <p>Row: <span id="rowNumber"></span> | Seat: <span id="seatNumber"></span></p>
+            <p>Subtotal: <span id="subtotal">$0.00</span></p>
+            <p>Service fee: <span id="serviceFee">$0.00</span></p>
+            <h3>Total: <span id="totalPrice">$0.00</span></h3>
+        </div>
+    </div>
+
+    <script>
+        const ticketData = {
+            eventName: "Bronx Thunder",
+            eventDate: "Oct 10, 2025, 7:00 PM – 11:00 PM",
+            eventLocation: "San Antonio",
+            ticketType: "Front Row Fearless",
+            ticketPrice: "$150.00",
+            rowNumber: "4",
+            seatNumber: "2",
+            subtotal: "$150.00",
+            serviceFee: "$3.75",
+            totalPrice: "$153.75"
+        };
+
+        function startCountdown(duration) {
+            let timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                document.getElementById('countdown').textContent = minutes + ":" + seconds;
+                if (--timer < 0) {
+                    timer = 0;
+                }
+            }, 1000);
+        }
+        startCountdown(8 * 60 + 42);
+
+        function updateSummary() {
+            document.getElementById('eventName').textContent = ticketData.eventName;
+            document.getElementById('eventDate').textContent = ticketData.eventDate;
+            document.getElementById('eventLocation').textContent = ticketData.eventLocation;
+            document.getElementById('ticketType').textContent = ticketData.ticketType;
+            document.getElementById('ticketPrice').textContent = ticketData.ticketPrice;
+            document.getElementById('rowNumber').textContent = ticketData.rowNumber;
+            document.getElementById('seatNumber').textContent = ticketData.seatNumber;
+            document.getElementById('subtotal').textContent = ticketData.subtotal;
+            document.getElementById('serviceFee').textContent = ticketData.serviceFee;
+            document.getElementById('totalPrice').textContent = ticketData.totalPrice;
+        }
+    </script>
+</body>
+</html>
