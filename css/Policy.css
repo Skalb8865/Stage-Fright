@@ -1,0 +1,27 @@
+:root {
+    --basically-black: #0a0a0a;
+
+    --primary: #DC0000;
+    --primary-dark: #850000;
+
+
+    --light-grey: #BDC4D0;
+    --grey: grey;
+    --dark-grey: #555756;
+
+    --background-light: #F3F4F8;
+    --background-dark: #0a0a0a;
+    --accent: #e5e4ea;
+
+
+    --font-lightest: #fff;
+    --font-light: #abaab4;
+    --font-dark: #333;
+    --font-darkest: #0a0a0a;
+}
+
+/*This is just a placeholder*/
+body{
+    background-color: var(--background-dark);
+}
+
