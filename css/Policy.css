@@ -35,7 +35,10 @@ body{
 }
 
 .privacy{
+    font-size: 45px;
+    text-transform: uppercase;
     padding-bottom: 50px;
+    color: var(--primary-dark);
 }
 
 .p-Body{
