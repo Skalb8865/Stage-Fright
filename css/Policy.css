@@ -20,8 +20,22 @@
     --font-darkest: #0a0a0a;
 }
 
-/*This is just a placeholder*/
+/*This is just a placeholder background color*/
 body{
-    background-color: var(--background-light);
+    background-color: var(--background-dark);
 }
 
+.privatePolicy{
+    color: var(--font-lightest);
+}
+.privacy{
+    padding-bottom: 50px;
+}
+
+.p-Body{
+    padding-left: 10px;
+}
+
+.p-Body h2{
+    text-decoration: underline;
+}
