@@ -1,11 +1,12 @@
-body{
+body {
     overflow-x: hidden;
     background-color: rgb(0, 0, 0);
 }
+
 .tab {
-    
+
     background-color: #2c2727;
-    width: 415px;
+    width: 80%;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -15,12 +16,15 @@ body{
     flex-wrap: wrap;
     border-radius: 4px;
 }
-.Container{
+
+.container {
     max-width: 1536px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Style the buttons inside the tab */
@@ -35,14 +39,17 @@ body{
     align-items: center;
     color: azure;
 }
-.tabcontent{
+
+.tabcontent {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
+    width: 80%;
 }
-.Title{
-    float:left;
+
+.Title {
+    float: left;
     margin-top: -5px;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -52,20 +59,22 @@ body{
     border-image: linear-gradient(to right, #ec1c1c 50%, transparent 50%) 100% 1;
 }
 
-.text{
+.text {
     margin-top: -12px;
     float: left;
     color: rgb(255, 255, 255);
     font-size: 17px;
     text-align: left;
 }
-.payment{
+
+.payment {
     float: right;
     margin-top: 2px;
     color: red;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
 }
+
 /* Change background color of buttons on hover */
 .tab button:hover {
     border-bottom: #ec1c1c;
@@ -78,7 +87,7 @@ body{
 
 /* Create an active/current tablink class */
 .tab button.active {
-   
+
     border-bottom: #ec1c1c;
     border-style: none none solid none;
     border-width: 5px;
@@ -95,6 +104,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: end;
 
 }
 
@@ -106,14 +116,16 @@ body{
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Clear floats after the columns */
-/* .row:after {
+.row:after {
     content: "";
     display: grid;
     clear: both;
-} */
+}
 
 /* Style the counter cards */
 .card {
@@ -147,6 +159,7 @@ body{
     line-height: 3rem;
     font-weight: 500;
 }
+
 .contact_button--container {
     display: flex;
     justify-content: center;
@@ -179,6 +192,7 @@ body{
         width: 87%;
         margin-bottom: 20px;
     }
+
     .row {
         grid-template-columns: 1fr 1fr;
         width: 150px;
@@ -194,6 +208,7 @@ body{
         width: 87%;
         margin-bottom: 20px;
     }
+
     .row {
         grid-template-columns: 1fr 1fr;
         width: 450px;
@@ -207,6 +222,7 @@ body{
         width: 87%;
         margin-bottom: 20px;
     }
+
     .row {
         display: flex;
         grid-template-columns: 1fr 1fr;
