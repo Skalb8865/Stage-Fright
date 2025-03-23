@@ -33,24 +33,28 @@ body{
 
 .privatePolicy p{
     font-size: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
 }
 
 .privacy{
     font-size: 45px;
     text-transform: uppercase;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
     color: var(--primary-dark);
 }
 
 .p-Body{
-    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     background-color: var(--background-dark);
 }
 
 .p-Body h2{
-    text-decoration: underline;
     font-weight: bold 500px;
+}
+
+.p-Intro h2{
+    
 }
 
 
