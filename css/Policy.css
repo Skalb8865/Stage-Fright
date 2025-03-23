@@ -27,15 +27,23 @@ body{
 
 .privatePolicy{
     color: var(--font-lightest);
+    text-align: center;
 }
+
+.privatePolicy p{
+    font-size: 20px;
+}
+
 .privacy{
     padding-bottom: 50px;
 }
 
 .p-Body{
-    padding-left: 10px;
+    padding: 10px;
 }
 
 .p-Body h2{
     text-decoration: underline;
+    font-weight: bold 500px;
 }
+
