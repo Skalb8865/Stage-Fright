@@ -10,6 +10,7 @@
     --dark-grey: #555756;
 
     --background-light: #F3F4F8;
+    --background-lessdark:#1D1B19;
     --background-dark: #0a0a0a;
     --accent: #e5e4ea;
 
@@ -22,7 +23,7 @@
 
 /*This is just a placeholder background color*/
 body{
-    background-color: var(--background-dark);
+    background-color: var(--background-lessdark);
 }
 
 .privatePolicy{
@@ -32,6 +33,7 @@ body{
 
 .privatePolicy p{
     font-size: 20px;
+    padding-bottom: 20px;
 }
 
 .privacy{
@@ -43,10 +45,12 @@ body{
 
 .p-Body{
     padding: 10px;
+    background-color: var(--background-dark);
 }
 
 .p-Body h2{
     text-decoration: underline;
     font-weight: bold 500px;
 }
+
 
