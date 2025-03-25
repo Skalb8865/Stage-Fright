@@ -33,11 +33,11 @@ body{
 
 .privatePolicy p{
     font-size: 20px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
 }
 
 .privacy{
-    font-size: 45px;
+    font-size: 40px;
     text-transform: uppercase;
     padding-bottom: 45px;
     color: var(--primary-dark);
@@ -49,13 +49,14 @@ body{
     background-color: var(--background-dark);
 }
 
+/* Idk why this isn't working*/
 .p-Body h2{
     font-weight: bold 500px;
     
 }
 
 .p-Intro h2{
-    
+
 }
 
 
