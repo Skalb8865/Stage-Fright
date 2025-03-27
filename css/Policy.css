@@ -36,11 +36,15 @@ body{
     padding-bottom: 14px;
 }
 
+.privatePolicy h2{
+    color: var(--primary);
+}
+
 .privacy{
     font-size: 40px;
     text-transform: uppercase;
     padding-bottom: 45px;
-    color: var(--primary-dark);
+    color: var(--primary);
 }
 
 .p-Body{
